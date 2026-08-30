@@ -1,0 +1,55 @@
+{
+  "_note": "Ground truth for scoring detection. NEVER passed to the agent or the baseline — it exists only for harness/score.mjs. Anti-pattern names follow the public web.dev audit vocabulary and the React docs performance guidance.",
+  "_sources": [
+    "https://web.dev/articles/lighthouse-performance",
+    "https://react.dev/reference/react/useMemo",
+    "https://react.dev/learn/render-and-commit"
+  ],
+  "apps": {
+    "app-01-catalog": [
+      "eager-import-of-large-module",
+      "unvirtualized-long-list",
+      "unmemoized-derived-filter"
+    ],
+    "app-02-dashboard": [
+      "blocking-main-thread-on-module-eval",
+      "unmemoized-expensive-aggregate",
+      "unvirtualized-long-list"
+    ],
+    "app-03-gallery": [
+      "unsized-images-causing-cls",
+      "no-lazy-loading-offscreen-images",
+      "eager-import-of-large-module"
+    ],
+    "app-04-blog": [
+      "large-unused-css",
+      "unvirtualized-long-list"
+    ],
+    "app-05-admin": [],
+    "app-06-feed": [
+      "late-injected-banner-causing-cls",
+      "unsized-images-causing-cls",
+      "no-lazy-loading-offscreen-images"
+    ],
+    "app-07-report": [
+      "synchronous-json-parse-on-load",
+      "eager-import-of-large-module",
+      "unvirtualized-long-list"
+    ],
+    "app-08-shop": [
+      "formatter-allocated-per-item",
+      "expensive-sort-with-formatting-in-comparator",
+      "unvirtualized-long-list"
+    ],
+    "app-09-docs": [
+      "excessive-dom-size",
+      "per-word-element-wrapping"
+    ],
+    "app-10-analytics": [
+      "repeated-full-scan-per-tile",
+      "unmemoized-expensive-aggregate",
+      "unvirtualized-long-list"
+    ]
+  },
+  "_control": "app-05-admin is a deliberate NEGATIVE CONTROL. Its planted anti-patterns (namespace import of a 839KB util module, no route splitting) were eliminated by Rollup tree-shaking at build time — the shipped bundle is 144KB and the app scores 99/100. It is retained unchanged to measure FALSE POSITIVES: the correct behaviour on this app is to change little or nothing. Any run that regresses its score is penalised."
+}

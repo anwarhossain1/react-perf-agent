@@ -1,0 +1,613 @@
+{
+  "label": "simple",
+  "inlineCap": 20000,
+  "measuredAt": "2026-08-30T09:17:46.629Z",
+  "apps": {
+    "app-01-catalog": {
+      "appId": "app-01-catalog",
+      "before": {
+        "appId": "app-01-catalog",
+        "runs": 3,
+        "bundle": {
+          "jsKB": 1893.6,
+          "totalKB": 1893.6
+        },
+        "samples": [
+          {
+            "score": 45,
+            "fcp": 10203,
+            "lcp": 10203,
+            "tbt": 439,
+            "cls": 0,
+            "si": 10203
+          },
+          {
+            "score": 45,
+            "fcp": 10202,
+            "lcp": 10202,
+            "tbt": 448,
+            "cls": 0,
+            "si": 10202
+          },
+          {
+            "score": 45,
+            "fcp": 10201,
+            "lcp": 10351,
+            "tbt": 447,
+            "cls": 0,
+            "si": 10201
+          }
+        ],
+        "score": 45,
+        "fcp": 10202,
+        "lcp": 10203,
+        "tbt": 447,
+        "cls": 0,
+        "si": 10202,
+        "scoreSpread": 0
+      },
+      "after": null,
+      "error": "model produced no parseable file blocks",
+      "editSeconds": 61,
+      "rounds": 1,
+      "filesWritten": [],
+      "promptChars": 22838,
+      "turns": 1
+    },
+    "app-02-dashboard": {
+      "appId": "app-02-dashboard",
+      "before": {
+        "appId": "app-02-dashboard",
+        "runs": 3,
+        "bundle": {
+          "jsKB": 710.9,
+          "totalKB": 710.9
+        },
+        "samples": [
+          {
+            "score": 73,
+            "fcp": 4352,
+            "lcp": 4502,
+            "tbt": 103,
+            "cls": 0,
+            "si": 4352
+          },
+          {
+            "score": 73,
+            "fcp": 4352,
+            "lcp": 4502,
+            "tbt": 101,
+            "cls": 0,
+            "si": 4352
+          },
+          {
+            "score": 73,
+            "fcp": 4352,
+            "lcp": 4502,
+            "tbt": 93,
+            "cls": 0,
+            "si": 4352
+          }
+        ],
+        "score": 73,
+        "fcp": 4352,
+        "lcp": 4502,
+        "tbt": 101,
+        "cls": 0,
+        "si": 4352,
+        "scoreSpread": 0
+      },
+      "after": null,
+      "error": "model produced no parseable file blocks",
+      "editSeconds": 25,
+      "rounds": 1,
+      "filesWritten": [],
+      "promptChars": 23154,
+      "turns": 1
+    },
+    "app-03-gallery": {
+      "appId": "app-03-gallery",
+      "before": {
+        "appId": "app-03-gallery",
+        "runs": 3,
+        "bundle": {
+          "jsKB": 1176.9,
+          "totalKB": 1176.9
+        },
+        "samples": [
+          {
+            "score": 53,
+            "fcp": 6601,
+            "lcp": 6803,
+            "tbt": 353,
+            "cls": 0,
+            "si": 6601
+          },
+          {
+            "score": 52,
+            "fcp": 6601,
+            "lcp": 6804,
+            "tbt": 356,
+            "cls": 0,
+            "si": 6601
+          },
+          {
+            "score": 52,
+            "fcp": 6602,
+            "lcp": 6807,
+            "tbt": 361,
+            "cls": 0,
+            "si": 6602
+          }
+        ],
+        "score": 52,
+        "fcp": 6601,
+        "lcp": 6804,
+        "tbt": 356,
+        "cls": 0,
+        "si": 6601,
+        "scoreSpread": 1
+      },
+      "after": null,
+      "error": "build failed for app-03-gallery:\n\u001b[31mfailed to load config from D:\\SKH\\hackathon-react-perf-agent\\runs\\simple\\app-03-gallery\\vite.config.js\u001b[39m\n\u001b[31merror during build:\nError [ERR_MODULE_NOT_FOUND]: Cannot find package 'vite-plugin-compression2' imported from D:\\SKH\\hackathon-react-perf-agent\\runs",
+      "editSeconds": 328,
+      "rounds": 1,
+      "filesWritten": [
+        "src/photos.js",
+        "src/main.jsx",
+        "vite.config.js"
+      ],
+      "promptChars": 22231,
+      "turns": 1
+    },
+    "app-04-blog": {
+      "appId": "app-04-blog",
+      "before": {
+        "appId": "app-04-blog",
+        "runs": 3,
+        "bundle": {
+          "jsKB": 329,
+          "totalKB": 709.7
+        },
+        "samples": [
+          {
+            "score": 72,
+            "fcp": 4652,
+            "lcp": 4652,
+            "tbt": 0,
+            "cls": 0,
+            "si": 4652
+          },
+          {
+            "score": 72,
+            "fcp": 4652,
+            "lcp": 4652,
+            "tbt": 0,
+            "cls": 0,
+            "si": 4652
+          },
+          {
+            "score": 72,
+            "fcp": 4652,
+            "lcp": 4652,
+            "tbt": 0,
+            "cls": 0,
+            "si": 4652
+          }
+        ],
+        "score": 72,
+        "fcp": 4652,
+        "lcp": 4652,
+        "tbt": 0,
+        "cls": 0,
+        "si": 4652,
+        "scoreSpread": 0
+      },
+      "after": null,
+      "error": "model produced no parseable file blocks",
+      "editSeconds": 47,
+      "rounds": 1,
+      "filesWritten": [],
+      "promptChars": 42060,
+      "turns": 1
+    },
+    "app-05-admin": {
+      "appId": "app-05-admin",
+      "before": {
+        "appId": "app-05-admin",
+        "runs": 3,
+        "bundle": {
+          "jsKB": 144.3,
+          "totalKB": 144.3
+        },
+        "samples": [
+          {
+            "score": 99,
+            "fcp": 1501,
+            "lcp": 1651,
+            "tbt": 0,
+            "cls": 0,
+            "si": 1501
+          },
+          {
+            "score": 99,
+            "fcp": 1501,
+            "lcp": 1651,
+            "tbt": 0,
+            "cls": 0,
+            "si": 1501
+          },
+          {
+            "score": 99,
+            "fcp": 1501,
+            "lcp": 1651,
+            "tbt": 0,
+            "cls": 0,
+            "si": 1501
+          }
+        ],
+        "score": 99,
+        "fcp": 1501,
+        "lcp": 1651,
+        "tbt": 0,
+        "cls": 0,
+        "si": 1501,
+        "scoreSpread": 0
+      },
+      "after": {
+        "appId": "app-05-admin",
+        "runs": 3,
+        "baseDir": "runs\\simple",
+        "bundle": {
+          "jsKB": 144.2,
+          "totalKB": 144.2
+        },
+        "samples": [
+          {
+            "score": 100,
+            "fcp": 1502,
+            "lcp": 1502,
+            "tbt": 0,
+            "cls": 0,
+            "si": 1502
+          },
+          {
+            "score": 100,
+            "fcp": 1502,
+            "lcp": 1502,
+            "tbt": 0,
+            "cls": 0,
+            "si": 1502
+          },
+          {
+            "score": 100,
+            "fcp": 1543,
+            "lcp": 1543,
+            "tbt": 0,
+            "cls": 0,
+            "si": 1543
+          }
+        ],
+        "score": 100,
+        "fcp": 1502,
+        "lcp": 1502,
+        "tbt": 0,
+        "cls": 0,
+        "si": 1502,
+        "scoreSpread": 0
+      },
+      "error": null,
+      "editSeconds": 147,
+      "rounds": 1,
+      "filesWritten": [
+        "src/App.jsx",
+        "src/main.jsx",
+        "vite.config.js"
+      ],
+      "promptChars": 23269,
+      "turns": 1
+    },
+    "app-06-feed": {
+      "appId": "app-06-feed",
+      "before": {
+        "appId": "app-06-feed",
+        "runs": 3,
+        "bundle": {
+          "jsKB": 283.5,
+          "totalKB": 283.5
+        },
+        "samples": [
+          {
+            "score": 85,
+            "fcp": 2252,
+            "lcp": 2474,
+            "tbt": 395,
+            "cls": 0.053,
+            "si": 2252
+          },
+          {
+            "score": 85,
+            "fcp": 2251,
+            "lcp": 2475,
+            "tbt": 397,
+            "cls": 0.053,
+            "si": 2251
+          },
+          {
+            "score": 85,
+            "fcp": 2251,
+            "lcp": 2475,
+            "tbt": 397,
+            "cls": 0.053,
+            "si": 2251
+          }
+        ],
+        "score": 85,
+        "fcp": 2251,
+        "lcp": 2475,
+        "tbt": 397,
+        "cls": 0.053,
+        "si": 2251,
+        "scoreSpread": 0
+      },
+      "after": null,
+      "error": "model produced no parseable file blocks",
+      "editSeconds": 58,
+      "rounds": 1,
+      "filesWritten": [],
+      "promptChars": 22681,
+      "turns": 1
+    },
+    "app-07-report": {
+      "appId": "app-07-report",
+      "before": {
+        "appId": "app-07-report",
+        "runs": 3,
+        "bundle": {
+          "jsKB": 1245.3,
+          "totalKB": 1245.3
+        },
+        "samples": [
+          {
+            "score": 49,
+            "fcp": 7051,
+            "lcp": 7201,
+            "tbt": 434,
+            "cls": 0,
+            "si": 7051
+          },
+          {
+            "score": 49,
+            "fcp": 7051,
+            "lcp": 7201,
+            "tbt": 431,
+            "cls": 0,
+            "si": 7051
+          },
+          {
+            "score": 49,
+            "fcp": 7051,
+            "lcp": 7201,
+            "tbt": 435,
+            "cls": 0,
+            "si": 7051
+          }
+        ],
+        "score": 49,
+        "fcp": 7051,
+        "lcp": 7201,
+        "tbt": 434,
+        "cls": 0,
+        "si": 7051,
+        "scoreSpread": 0
+      },
+      "after": null,
+      "error": "model produced no parseable file blocks",
+      "editSeconds": 545,
+      "rounds": 1,
+      "filesWritten": [],
+      "promptChars": 22978,
+      "turns": 1
+    },
+    "app-08-shop": {
+      "appId": "app-08-shop",
+      "before": {
+        "appId": "app-08-shop",
+        "runs": 3,
+        "bundle": {
+          "jsKB": 658.5,
+          "totalKB": 658.5
+        },
+        "samples": [
+          {
+            "score": 47,
+            "fcp": 4051,
+            "lcp": 4201,
+            "tbt": 2855,
+            "cls": 0,
+            "si": 4051
+          },
+          {
+            "score": 47,
+            "fcp": 4051,
+            "lcp": 4201,
+            "tbt": 2839,
+            "cls": 0,
+            "si": 4051
+          },
+          {
+            "score": 47,
+            "fcp": 4051,
+            "lcp": 4201,
+            "tbt": 2830,
+            "cls": 0,
+            "si": 4051
+          }
+        ],
+        "score": 47,
+        "fcp": 4051,
+        "lcp": 4201,
+        "tbt": 2839,
+        "cls": 0,
+        "si": 4051,
+        "scoreSpread": 0
+      },
+      "after": {
+        "appId": "app-08-shop",
+        "runs": 3,
+        "baseDir": "runs\\simple",
+        "bundle": {
+          "jsKB": 156.8,
+          "totalKB": 156.8
+        },
+        "samples": [
+          {
+            "score": 99,
+            "fcp": 1502,
+            "lcp": 1652,
+            "tbt": 52,
+            "cls": 0,
+            "si": 1502
+          },
+          {
+            "score": 99,
+            "fcp": 1501,
+            "lcp": 1651,
+            "tbt": 44,
+            "cls": 0,
+            "si": 1501
+          },
+          {
+            "score": 99,
+            "fcp": 1502,
+            "lcp": 1652,
+            "tbt": 45,
+            "cls": 0,
+            "si": 1502
+          }
+        ],
+        "score": 99,
+        "fcp": 1502,
+        "lcp": 1652,
+        "tbt": 45,
+        "cls": 0,
+        "si": 1502,
+        "scoreSpread": 0
+      },
+      "error": null,
+      "editSeconds": 241,
+      "rounds": 1,
+      "filesWritten": [
+        "index.html",
+        "src/main.jsx",
+        "vite.config.js"
+      ],
+      "promptChars": 22656,
+      "turns": 1
+    },
+    "app-09-docs": {
+      "appId": "app-09-docs",
+      "before": {
+        "appId": "app-09-docs",
+        "runs": 3,
+        "bundle": {
+          "jsKB": 519.1,
+          "totalKB": 519.1
+        },
+        "samples": [
+          {
+            "score": 73,
+            "fcp": 3301,
+            "lcp": 3451,
+            "tbt": 471,
+            "cls": 0,
+            "si": 3301
+          },
+          {
+            "score": 70,
+            "fcp": 3301,
+            "lcp": 3451,
+            "tbt": 568,
+            "cls": 0,
+            "si": 3301
+          },
+          {
+            "score": 71,
+            "fcp": 3301,
+            "lcp": 3451,
+            "tbt": 531,
+            "cls": 0,
+            "si": 3301
+          }
+        ],
+        "score": 71,
+        "fcp": 3301,
+        "lcp": 3451,
+        "tbt": 531,
+        "cls": 0,
+        "si": 3301,
+        "scoreSpread": 3
+      },
+      "after": null,
+      "error": "model produced no parseable file blocks",
+      "editSeconds": 18,
+      "rounds": 1,
+      "filesWritten": [],
+      "promptChars": 22342,
+      "turns": 1
+    },
+    "app-10-analytics": {
+      "appId": "app-10-analytics",
+      "before": {
+        "appId": "app-10-analytics",
+        "runs": 3,
+        "bundle": {
+          "jsKB": 700.7,
+          "totalKB": 700.7
+        },
+        "samples": [
+          {
+            "score": 73,
+            "fcp": 4201,
+            "lcp": 4501,
+            "tbt": 126,
+            "cls": 0,
+            "si": 4201
+          },
+          {
+            "score": 73,
+            "fcp": 4202,
+            "lcp": 4502,
+            "tbt": 132,
+            "cls": 0,
+            "si": 4202
+          },
+          {
+            "score": 73,
+            "fcp": 4201,
+            "lcp": 4501,
+            "tbt": 125,
+            "cls": 0,
+            "si": 4201
+          }
+        ],
+        "score": 73,
+        "fcp": 4201,
+        "lcp": 4501,
+        "tbt": 126,
+        "cls": 0,
+        "si": 4201,
+        "scoreSpread": 0
+      },
+      "after": null,
+      "error": "model produced no parseable file blocks",
+      "editSeconds": 21,
+      "rounds": 1,
+      "filesWritten": [],
+      "promptChars": 23052,
+      "turns": 1
+    }
+  },
+  "meanAfter": 99.5,
+  "failures": 8
+}

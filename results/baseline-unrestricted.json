@@ -1,0 +1,1293 @@
+{
+  "label": "baseline",
+  "measuredAt": "2026-08-30T06:45:14.008Z",
+  "apps": {
+    "app-01-catalog": {
+      "appId": "app-01-catalog",
+      "before": {
+        "appId": "app-01-catalog",
+        "runs": 3,
+        "bundle": {
+          "jsKB": 1893.6,
+          "totalKB": 1893.6
+        },
+        "samples": [
+          {
+            "score": 45,
+            "fcp": 10203,
+            "lcp": 10203,
+            "tbt": 439,
+            "cls": 0,
+            "si": 10203
+          },
+          {
+            "score": 45,
+            "fcp": 10202,
+            "lcp": 10202,
+            "tbt": 448,
+            "cls": 0,
+            "si": 10202
+          },
+          {
+            "score": 45,
+            "fcp": 10201,
+            "lcp": 10351,
+            "tbt": 447,
+            "cls": 0,
+            "si": 10201
+          }
+        ],
+        "score": 45,
+        "fcp": 10202,
+        "lcp": 10203,
+        "tbt": 447,
+        "cls": 0,
+        "si": 10202,
+        "scoreSpread": 0
+      },
+      "after": {
+        "appId": "app-01-catalog",
+        "runs": 3,
+        "baseDir": "runs\\baseline",
+        "bundle": {
+          "jsKB": 314.1,
+          "totalKB": 314.1
+        },
+        "samples": [
+          {
+            "score": 95,
+            "fcp": 1961,
+            "lcp": 2561,
+            "tbt": 0,
+            "cls": 0,
+            "si": 1961
+          },
+          {
+            "score": 96,
+            "fcp": 1952,
+            "lcp": 2552,
+            "tbt": 0,
+            "cls": 0,
+            "si": 1952
+          },
+          {
+            "score": 96,
+            "fcp": 1952,
+            "lcp": 2552,
+            "tbt": 0,
+            "cls": 0,
+            "si": 1952
+          }
+        ],
+        "score": 96,
+        "fcp": 1952,
+        "lcp": 2552,
+        "tbt": 0,
+        "cls": 0,
+        "si": 1952,
+        "scoreSpread": 1
+      },
+      "error": null,
+      "editSeconds": 828,
+      "turns": 72,
+      "toolCalls": [
+        "Bash",
+        "Bash",
+        "Read",
+        "Read",
+        "Glob",
+        "Read",
+        "Read",
+        "Read",
+        "Bash",
+        "Bash",
+        "Bash",
+        "Glob",
+        "Read",
+        "Read",
+        "Read",
+        "Glob",
+        "Bash",
+        "PowerShell",
+        "Write",
+        "Bash",
+        "PowerShell",
+        "Write",
+        "PowerShell",
+        "Bash",
+        "Bash",
+        "Bash",
+        "Grep",
+        "Grep",
+        "Bash",
+        "Bash",
+        "Bash",
+        "Bash",
+        "Bash",
+        "Bash",
+        "Bash",
+        "PowerShell",
+        "PowerShell",
+        "PowerShell",
+        "PowerShell",
+        "Bash",
+        "PowerShell",
+        "PowerShell",
+        "Bash",
+        "Bash",
+        "Bash",
+        "Bash",
+        "Edit",
+        "Bash",
+        "Edit",
+        "Edit",
+        "Edit",
+        "Edit",
+        "Edit",
+        "Bash",
+        "Bash",
+        "Grep",
+        "PowerShell",
+        "PowerShell",
+        "Edit",
+        "Edit",
+        "Write",
+        "Bash",
+        "Bash",
+        "PowerShell",
+        "Grep",
+        "Bash",
+        "Read",
+        "Bash",
+        "Edit",
+        "Edit",
+        "Read"
+      ],
+      "costUsd": 4.277485500000001
+    },
+    "app-02-dashboard": {
+      "appId": "app-02-dashboard",
+      "before": {
+        "appId": "app-02-dashboard",
+        "runs": 3,
+        "bundle": {
+          "jsKB": 710.9,
+          "totalKB": 710.9
+        },
+        "samples": [
+          {
+            "score": 73,
+            "fcp": 4352,
+            "lcp": 4502,
+            "tbt": 103,
+            "cls": 0,
+            "si": 4352
+          },
+          {
+            "score": 73,
+            "fcp": 4352,
+            "lcp": 4502,
+            "tbt": 101,
+            "cls": 0,
+            "si": 4352
+          },
+          {
+            "score": 73,
+            "fcp": 4352,
+            "lcp": 4502,
+            "tbt": 93,
+            "cls": 0,
+            "si": 4352
+          }
+        ],
+        "score": 73,
+        "fcp": 4352,
+        "lcp": 4502,
+        "tbt": 101,
+        "cls": 0,
+        "si": 4352,
+        "scoreSpread": 0
+      },
+      "after": {
+        "appId": "app-02-dashboard",
+        "runs": 3,
+        "baseDir": "runs\\baseline",
+        "bundle": {
+          "jsKB": 142.3,
+          "totalKB": 142.3
+        },
+        "samples": [
+          {
+            "score": 99,
+            "fcp": 1502,
+            "lcp": 1652,
+            "tbt": 0,
+            "cls": 0,
+            "si": 1502
+          },
+          {
+            "score": 99,
+            "fcp": 1502,
+            "lcp": 1652,
+            "tbt": 0,
+            "cls": 0,
+            "si": 1502
+          },
+          {
+            "score": 100,
+            "fcp": 1501,
+            "lcp": 1501,
+            "tbt": 0,
+            "cls": 0,
+            "si": 1501
+          }
+        ],
+        "score": 99,
+        "fcp": 1502,
+        "lcp": 1652,
+        "tbt": 0,
+        "cls": 0,
+        "si": 1502,
+        "scoreSpread": 1
+      },
+      "error": null,
+      "editSeconds": 638,
+      "turns": 46,
+      "toolCalls": [
+        "Bash",
+        "Bash",
+        "Read",
+        "Bash",
+        "Bash",
+        "Bash",
+        "Bash",
+        "Read",
+        "Read",
+        "Bash",
+        "Glob",
+        "Read",
+        "Read",
+        "Bash",
+        "PowerShell",
+        "Bash",
+        "Write",
+        "Bash",
+        "Bash",
+        "Bash",
+        "Bash",
+        "Bash",
+        "Bash",
+        "Bash",
+        "Bash",
+        "Bash",
+        "Bash",
+        "Bash",
+        "Grep",
+        "Bash",
+        "Write",
+        "Write",
+        "Write",
+        "Edit",
+        "Bash",
+        "Read",
+        "Bash",
+        "Bash",
+        "Bash",
+        "Bash",
+        "Grep",
+        "Grep",
+        "Read",
+        "Read",
+        "Bash"
+      ],
+      "costUsd": 3.0260320000000003
+    },
+    "app-03-gallery": {
+      "appId": "app-03-gallery",
+      "before": {
+        "appId": "app-03-gallery",
+        "runs": 3,
+        "bundle": {
+          "jsKB": 1176.9,
+          "totalKB": 1176.9
+        },
+        "samples": [
+          {
+            "score": 53,
+            "fcp": 6601,
+            "lcp": 6803,
+            "tbt": 353,
+            "cls": 0,
+            "si": 6601
+          },
+          {
+            "score": 52,
+            "fcp": 6601,
+            "lcp": 6804,
+            "tbt": 356,
+            "cls": 0,
+            "si": 6601
+          },
+          {
+            "score": 52,
+            "fcp": 6602,
+            "lcp": 6807,
+            "tbt": 361,
+            "cls": 0,
+            "si": 6602
+          }
+        ],
+        "score": 52,
+        "fcp": 6601,
+        "lcp": 6804,
+        "tbt": 356,
+        "cls": 0,
+        "si": 6601,
+        "scoreSpread": 1
+      },
+      "after": {
+        "appId": "app-03-gallery",
+        "runs": 3,
+        "baseDir": "runs\\baseline",
+        "bundle": {
+          "jsKB": 150.1,
+          "totalKB": 150.1
+        },
+        "samples": [
+          {
+            "score": 99,
+            "fcp": 1502,
+            "lcp": 2103,
+            "tbt": 12,
+            "cls": 0,
+            "si": 1502
+          },
+          {
+            "score": 99,
+            "fcp": 1502,
+            "lcp": 2103,
+            "tbt": 14,
+            "cls": 0,
+            "si": 1502
+          },
+          {
+            "score": 99,
+            "fcp": 1502,
+            "lcp": 2103,
+            "tbt": 14,
+            "cls": 0,
+            "si": 1502
+          }
+        ],
+        "score": 99,
+        "fcp": 1502,
+        "lcp": 2103,
+        "tbt": 14,
+        "cls": 0,
+        "si": 1502,
+        "scoreSpread": 0
+      },
+      "error": null,
+      "editSeconds": 379,
+      "turns": 31,
+      "toolCalls": [
+        "Bash",
+        "Bash",
+        "Read",
+        "Bash",
+        "Bash",
+        "Bash",
+        "Write",
+        "Bash",
+        "PowerShell",
+        "Grep",
+        "Grep",
+        "PowerShell",
+        "PowerShell",
+        "Bash",
+        "Read",
+        "Read",
+        "PowerShell",
+        "Bash",
+        "Grep",
+        "Bash",
+        "Grep",
+        "Write",
+        "Write",
+        "Edit",
+        "PowerShell",
+        "Bash",
+        "Edit",
+        "Edit",
+        "Read",
+        "Read"
+      ],
+      "costUsd": 1.8385030000000002
+    },
+    "app-04-blog": {
+      "appId": "app-04-blog",
+      "before": {
+        "appId": "app-04-blog",
+        "runs": 3,
+        "bundle": {
+          "jsKB": 329,
+          "totalKB": 709.7
+        },
+        "samples": [
+          {
+            "score": 72,
+            "fcp": 4652,
+            "lcp": 4652,
+            "tbt": 0,
+            "cls": 0,
+            "si": 4652
+          },
+          {
+            "score": 72,
+            "fcp": 4652,
+            "lcp": 4652,
+            "tbt": 0,
+            "cls": 0,
+            "si": 4652
+          },
+          {
+            "score": 72,
+            "fcp": 4652,
+            "lcp": 4652,
+            "tbt": 0,
+            "cls": 0,
+            "si": 4652
+          }
+        ],
+        "score": 72,
+        "fcp": 4652,
+        "lcp": 4652,
+        "tbt": 0,
+        "cls": 0,
+        "si": 4652,
+        "scoreSpread": 0
+      },
+      "after": {
+        "appId": "app-04-blog",
+        "runs": 3,
+        "baseDir": "runs\\baseline",
+        "bundle": {
+          "jsKB": 139.5,
+          "totalKB": 139.5
+        },
+        "samples": [
+          {
+            "score": 99,
+            "fcp": 1502,
+            "lcp": 1652,
+            "tbt": 0,
+            "cls": 0,
+            "si": 1502
+          },
+          {
+            "score": 99,
+            "fcp": 1502,
+            "lcp": 1652,
+            "tbt": 0,
+            "cls": 0,
+            "si": 1502
+          },
+          {
+            "score": 99,
+            "fcp": 1501,
+            "lcp": 1651,
+            "tbt": 0,
+            "cls": 0,
+            "si": 1501
+          }
+        ],
+        "score": 99,
+        "fcp": 1502,
+        "lcp": 1652,
+        "tbt": 0,
+        "cls": 0,
+        "si": 1502,
+        "scoreSpread": 0
+      },
+      "error": null,
+      "editSeconds": 252,
+      "turns": 35,
+      "toolCalls": [
+        "Bash",
+        "Bash",
+        "Bash",
+        "Bash",
+        "Bash",
+        "Bash",
+        "Bash",
+        "Bash",
+        "Read",
+        "Bash",
+        "Write",
+        "Bash",
+        "Grep",
+        "Grep",
+        "Bash",
+        "Bash",
+        "Glob",
+        "Read",
+        "Read",
+        "Read",
+        "Write",
+        "Write",
+        "Edit",
+        "Bash",
+        "Bash",
+        "PowerShell",
+        "PowerShell",
+        "Bash",
+        "Bash",
+        "Glob",
+        "Bash",
+        "Grep",
+        "Grep",
+        "Read"
+      ],
+      "costUsd": 1.6556755000000003
+    },
+    "app-05-admin": {
+      "appId": "app-05-admin",
+      "before": {
+        "appId": "app-05-admin",
+        "runs": 3,
+        "bundle": {
+          "jsKB": 144.3,
+          "totalKB": 144.3
+        },
+        "samples": [
+          {
+            "score": 99,
+            "fcp": 1501,
+            "lcp": 1651,
+            "tbt": 0,
+            "cls": 0,
+            "si": 1501
+          },
+          {
+            "score": 99,
+            "fcp": 1501,
+            "lcp": 1651,
+            "tbt": 0,
+            "cls": 0,
+            "si": 1501
+          },
+          {
+            "score": 99,
+            "fcp": 1501,
+            "lcp": 1651,
+            "tbt": 0,
+            "cls": 0,
+            "si": 1501
+          }
+        ],
+        "score": 99,
+        "fcp": 1501,
+        "lcp": 1651,
+        "tbt": 0,
+        "cls": 0,
+        "si": 1501,
+        "scoreSpread": 0
+      },
+      "after": {
+        "appId": "app-05-admin",
+        "runs": 3,
+        "baseDir": "runs\\baseline",
+        "bundle": {
+          "jsKB": 144.2,
+          "totalKB": 144.2
+        },
+        "samples": [
+          {
+            "score": 100,
+            "fcp": 1501,
+            "lcp": 1501,
+            "tbt": 0,
+            "cls": 0,
+            "si": 1501
+          },
+          {
+            "score": 99,
+            "fcp": 1501,
+            "lcp": 1951,
+            "tbt": 0,
+            "cls": 0,
+            "si": 1501
+          },
+          {
+            "score": 100,
+            "fcp": 1501,
+            "lcp": 1501,
+            "tbt": 0,
+            "cls": 0,
+            "si": 1501
+          }
+        ],
+        "score": 100,
+        "fcp": 1501,
+        "lcp": 1501,
+        "tbt": 0,
+        "cls": 0,
+        "si": 1501,
+        "scoreSpread": 1
+      },
+      "error": null,
+      "editSeconds": 303,
+      "turns": 27,
+      "toolCalls": [
+        "Bash",
+        "Bash",
+        "Glob",
+        "Read",
+        "Read",
+        "Read",
+        "Read",
+        "Bash",
+        "Bash",
+        "Read",
+        "Glob",
+        "Read",
+        "Read",
+        "Bash",
+        "PowerShell",
+        "Bash",
+        "Bash",
+        "Bash",
+        "Bash",
+        "Write",
+        "Write",
+        "Write",
+        "Bash",
+        "PowerShell",
+        "Edit",
+        "Read"
+      ],
+      "costUsd": 1.450816
+    },
+    "app-06-feed": {
+      "appId": "app-06-feed",
+      "before": {
+        "appId": "app-06-feed",
+        "runs": 3,
+        "bundle": {
+          "jsKB": 283.5,
+          "totalKB": 283.5
+        },
+        "samples": [
+          {
+            "score": 85,
+            "fcp": 2252,
+            "lcp": 2474,
+            "tbt": 395,
+            "cls": 0.053,
+            "si": 2252
+          },
+          {
+            "score": 85,
+            "fcp": 2251,
+            "lcp": 2475,
+            "tbt": 397,
+            "cls": 0.053,
+            "si": 2251
+          },
+          {
+            "score": 85,
+            "fcp": 2251,
+            "lcp": 2475,
+            "tbt": 397,
+            "cls": 0.053,
+            "si": 2251
+          }
+        ],
+        "score": 85,
+        "fcp": 2251,
+        "lcp": 2475,
+        "tbt": 397,
+        "cls": 0.053,
+        "si": 2251,
+        "scoreSpread": 0
+      },
+      "after": {
+        "appId": "app-06-feed",
+        "runs": 3,
+        "baseDir": "runs\\baseline",
+        "bundle": {
+          "jsKB": 140.2,
+          "totalKB": 140.2
+        },
+        "samples": [
+          {
+            "score": 99,
+            "fcp": 1501,
+            "lcp": 1601,
+            "tbt": 0,
+            "cls": 0.053,
+            "si": 1501
+          },
+          {
+            "score": 99,
+            "fcp": 1501,
+            "lcp": 1527,
+            "tbt": 2,
+            "cls": 0.053,
+            "si": 1501
+          },
+          {
+            "score": 99,
+            "fcp": 1501,
+            "lcp": 1602,
+            "tbt": 1,
+            "cls": 0.053,
+            "si": 1501
+          }
+        ],
+        "score": 99,
+        "fcp": 1501,
+        "lcp": 1601,
+        "tbt": 1,
+        "cls": 0.053,
+        "si": 1501,
+        "scoreSpread": 0
+      },
+      "error": null,
+      "editSeconds": 377,
+      "turns": 33,
+      "toolCalls": [
+        "Bash",
+        "Bash",
+        "Bash",
+        "Bash",
+        "Read",
+        "Read",
+        "Bash",
+        "Write",
+        "Bash",
+        "PowerShell",
+        "Bash",
+        "Bash",
+        "Bash",
+        "PowerShell",
+        "Write",
+        "PowerShell",
+        "Bash",
+        "Grep",
+        "Grep",
+        "Read",
+        "Read",
+        "Read",
+        "Write",
+        "Write",
+        "Write",
+        "Write",
+        "Bash",
+        "Bash",
+        "Grep",
+        "Grep",
+        "Grep",
+        "Edit"
+      ],
+      "costUsd": 2.1380955000000004
+    },
+    "app-07-report": {
+      "appId": "app-07-report",
+      "before": {
+        "appId": "app-07-report",
+        "runs": 3,
+        "bundle": {
+          "jsKB": 1245.3,
+          "totalKB": 1245.3
+        },
+        "samples": [
+          {
+            "score": 49,
+            "fcp": 7051,
+            "lcp": 7201,
+            "tbt": 434,
+            "cls": 0,
+            "si": 7051
+          },
+          {
+            "score": 49,
+            "fcp": 7051,
+            "lcp": 7201,
+            "tbt": 431,
+            "cls": 0,
+            "si": 7051
+          },
+          {
+            "score": 49,
+            "fcp": 7051,
+            "lcp": 7201,
+            "tbt": 435,
+            "cls": 0,
+            "si": 7051
+          }
+        ],
+        "score": 49,
+        "fcp": 7051,
+        "lcp": 7201,
+        "tbt": 434,
+        "cls": 0,
+        "si": 7051,
+        "scoreSpread": 0
+      },
+      "after": {
+        "appId": "app-07-report",
+        "runs": 3,
+        "baseDir": "runs\\baseline",
+        "bundle": {
+          "jsKB": 140.4,
+          "totalKB": 140.4
+        },
+        "samples": [
+          {
+            "score": 94,
+            "fcp": 1502,
+            "lcp": 3005,
+            "tbt": 107,
+            "cls": 0,
+            "si": 1502
+          },
+          {
+            "score": 95,
+            "fcp": 1501,
+            "lcp": 2854,
+            "tbt": 102,
+            "cls": 0,
+            "si": 1501
+          },
+          {
+            "score": 94,
+            "fcp": 1502,
+            "lcp": 3005,
+            "tbt": 103,
+            "cls": 0,
+            "si": 1502
+          }
+        ],
+        "score": 94,
+        "fcp": 1502,
+        "lcp": 3005,
+        "tbt": 103,
+        "cls": 0,
+        "si": 1502,
+        "scoreSpread": 1
+      },
+      "error": null,
+      "editSeconds": 741,
+      "turns": 42,
+      "toolCalls": [
+        "Bash",
+        "Bash",
+        "Read",
+        "Read",
+        "Bash",
+        "Bash",
+        "Bash",
+        "Bash",
+        "Write",
+        "Bash",
+        "PowerShell",
+        "Grep",
+        "Bash",
+        "Glob",
+        "Glob",
+        "Read",
+        "Read",
+        "Bash",
+        "Bash",
+        "Bash",
+        "Bash",
+        "PowerShell",
+        "PowerShell",
+        "Bash",
+        "PowerShell",
+        "Write",
+        "PowerShell",
+        "PowerShell",
+        "PowerShell",
+        "PowerShell",
+        "PowerShell",
+        "Write",
+        "Write",
+        "Write",
+        "Write",
+        "Edit",
+        "Edit",
+        "Read",
+        "Bash",
+        "Bash",
+        "Read"
+      ],
+      "costUsd": 3.198311499999999
+    },
+    "app-08-shop": {
+      "appId": "app-08-shop",
+      "before": {
+        "appId": "app-08-shop",
+        "runs": 3,
+        "bundle": {
+          "jsKB": 658.5,
+          "totalKB": 658.5
+        },
+        "samples": [
+          {
+            "score": 47,
+            "fcp": 4051,
+            "lcp": 4201,
+            "tbt": 2855,
+            "cls": 0,
+            "si": 4051
+          },
+          {
+            "score": 47,
+            "fcp": 4051,
+            "lcp": 4201,
+            "tbt": 2839,
+            "cls": 0,
+            "si": 4051
+          },
+          {
+            "score": 47,
+            "fcp": 4051,
+            "lcp": 4201,
+            "tbt": 2830,
+            "cls": 0,
+            "si": 4051
+          }
+        ],
+        "score": 47,
+        "fcp": 4051,
+        "lcp": 4201,
+        "tbt": 2839,
+        "cls": 0,
+        "si": 4051,
+        "scoreSpread": 0
+      },
+      "after": {
+        "appId": "app-08-shop",
+        "runs": 3,
+        "baseDir": "runs\\baseline",
+        "bundle": {
+          "jsKB": 140.4,
+          "totalKB": 140.4
+        },
+        "samples": [
+          {
+            "score": 99,
+            "fcp": 1502,
+            "lcp": 1652,
+            "tbt": 0,
+            "cls": 0,
+            "si": 1502
+          },
+          {
+            "score": 99,
+            "fcp": 1501,
+            "lcp": 1651,
+            "tbt": 0,
+            "cls": 0,
+            "si": 1501
+          },
+          {
+            "score": 100,
+            "fcp": 1501,
+            "lcp": 1501,
+            "tbt": 0,
+            "cls": 0,
+            "si": 1501
+          }
+        ],
+        "score": 99,
+        "fcp": 1501,
+        "lcp": 1651,
+        "tbt": 0,
+        "cls": 0,
+        "si": 1501,
+        "scoreSpread": 1
+      },
+      "error": null,
+      "editSeconds": 397,
+      "turns": 31,
+      "toolCalls": [
+        "Bash",
+        "Bash",
+        "Bash",
+        "Read",
+        "Read",
+        "Read",
+        "Bash",
+        "Bash",
+        "Write",
+        "Bash",
+        "Grep",
+        "Grep",
+        "PowerShell",
+        "PowerShell",
+        "PowerShell",
+        "PowerShell",
+        "PowerShell",
+        "PowerShell",
+        "Write",
+        "PowerShell",
+        "Bash",
+        "Bash",
+        "Grep",
+        "Grep",
+        "Grep",
+        "Write",
+        "Write",
+        "Write",
+        "Bash",
+        "Edit"
+      ],
+      "costUsd": 1.6854185
+    },
+    "app-09-docs": {
+      "appId": "app-09-docs",
+      "before": {
+        "appId": "app-09-docs",
+        "runs": 3,
+        "bundle": {
+          "jsKB": 519.1,
+          "totalKB": 519.1
+        },
+        "samples": [
+          {
+            "score": 73,
+            "fcp": 3301,
+            "lcp": 3451,
+            "tbt": 471,
+            "cls": 0,
+            "si": 3301
+          },
+          {
+            "score": 70,
+            "fcp": 3301,
+            "lcp": 3451,
+            "tbt": 568,
+            "cls": 0,
+            "si": 3301
+          },
+          {
+            "score": 71,
+            "fcp": 3301,
+            "lcp": 3451,
+            "tbt": 531,
+            "cls": 0,
+            "si": 3301
+          }
+        ],
+        "score": 71,
+        "fcp": 3301,
+        "lcp": 3451,
+        "tbt": 531,
+        "cls": 0,
+        "si": 3301,
+        "scoreSpread": 3
+      },
+      "after": {
+        "appId": "app-09-docs",
+        "runs": 3,
+        "baseDir": "runs\\baseline",
+        "bundle": {
+          "jsKB": 139.6,
+          "totalKB": 139.6
+        },
+        "samples": [
+          {
+            "score": 99,
+            "fcp": 1502,
+            "lcp": 1652,
+            "tbt": 0,
+            "cls": 0,
+            "si": 1502
+          },
+          {
+            "score": 99,
+            "fcp": 1501,
+            "lcp": 1651,
+            "tbt": 0,
+            "cls": 0,
+            "si": 1501
+          },
+          {
+            "score": 99,
+            "fcp": 1501,
+            "lcp": 1651,
+            "tbt": 0,
+            "cls": 0,
+            "si": 1501
+          }
+        ],
+        "score": 99,
+        "fcp": 1501,
+        "lcp": 1651,
+        "tbt": 0,
+        "cls": 0,
+        "si": 1501,
+        "scoreSpread": 0
+      },
+      "error": null,
+      "editSeconds": 239,
+      "turns": 27,
+      "toolCalls": [
+        "Bash",
+        "Bash",
+        "Read",
+        "Bash",
+        "Bash",
+        "Bash",
+        "Bash",
+        "Bash",
+        "Write",
+        "Bash",
+        "Bash",
+        "Bash",
+        "Bash",
+        "Bash",
+        "Grep",
+        "PowerShell",
+        "Bash",
+        "Write",
+        "Write",
+        "Write",
+        "Bash",
+        "Bash",
+        "Glob",
+        "Bash",
+        "Bash",
+        "Grep"
+      ],
+      "costUsd": 1.188376
+    },
+    "app-10-analytics": {
+      "appId": "app-10-analytics",
+      "before": {
+        "appId": "app-10-analytics",
+        "runs": 3,
+        "bundle": {
+          "jsKB": 700.7,
+          "totalKB": 700.7
+        },
+        "samples": [
+          {
+            "score": 73,
+            "fcp": 4201,
+            "lcp": 4501,
+            "tbt": 126,
+            "cls": 0,
+            "si": 4201
+          },
+          {
+            "score": 73,
+            "fcp": 4202,
+            "lcp": 4502,
+            "tbt": 132,
+            "cls": 0,
+            "si": 4202
+          },
+          {
+            "score": 73,
+            "fcp": 4201,
+            "lcp": 4501,
+            "tbt": 125,
+            "cls": 0,
+            "si": 4201
+          }
+        ],
+        "score": 73,
+        "fcp": 4201,
+        "lcp": 4501,
+        "tbt": 126,
+        "cls": 0,
+        "si": 4201,
+        "scoreSpread": 0
+      },
+      "after": {
+        "appId": "app-10-analytics",
+        "runs": 3,
+        "baseDir": "runs\\baseline",
+        "bundle": {
+          "jsKB": 144.2,
+          "totalKB": 144.2
+        },
+        "samples": [
+          {
+            "score": 100,
+            "fcp": 1502,
+            "lcp": 1502,
+            "tbt": 2,
+            "cls": 0,
+            "si": 1502
+          },
+          {
+            "score": 100,
+            "fcp": 1502,
+            "lcp": 1502,
+            "tbt": 2,
+            "cls": 0,
+            "si": 1502
+          },
+          {
+            "score": 100,
+            "fcp": 1501,
+            "lcp": 1501,
+            "tbt": 1,
+            "cls": 0,
+            "si": 1501
+          }
+        ],
+        "score": 100,
+        "fcp": 1502,
+        "lcp": 1502,
+        "tbt": 2,
+        "cls": 0,
+        "si": 1502,
+        "scoreSpread": 0
+      },
+      "error": null,
+      "editSeconds": 481,
+      "turns": 31,
+      "toolCalls": [
+        "Bash",
+        "Bash",
+        "Bash",
+        "Bash",
+        "Bash",
+        "Bash",
+        "Write",
+        "Bash",
+        "PowerShell",
+        "Grep",
+        "Bash",
+        "Write",
+        "Edit",
+        "Edit",
+        "Write",
+        "Write",
+        "Write",
+        "Bash",
+        "Read",
+        "Bash",
+        "Read",
+        "Write",
+        "Edit",
+        "PowerShell",
+        "Read",
+        "Edit",
+        "Edit",
+        "Edit",
+        "Edit",
+        "Read"
+      ],
+      "costUsd": 2.3034389999999996
+    }
+  },
+  "meanAfter": 98.4,
+  "buildFailures": 0
+}

@@ -1,0 +1,1190 @@
+{
+  "label": "baseline",
+  "measuredAt": "2026-08-30T09:47:26.731Z",
+  "apps": {
+    "app-01-catalog": {
+      "appId": "app-01-catalog",
+      "before": {
+        "appId": "app-01-catalog",
+        "runs": 3,
+        "bundle": {
+          "jsKB": 1893.6,
+          "totalKB": 1893.6
+        },
+        "samples": [
+          {
+            "score": 45,
+            "fcp": 10203,
+            "lcp": 10203,
+            "tbt": 439,
+            "cls": 0,
+            "si": 10203
+          },
+          {
+            "score": 45,
+            "fcp": 10202,
+            "lcp": 10202,
+            "tbt": 448,
+            "cls": 0,
+            "si": 10202
+          },
+          {
+            "score": 45,
+            "fcp": 10201,
+            "lcp": 10351,
+            "tbt": 447,
+            "cls": 0,
+            "si": 10201
+          }
+        ],
+        "score": 45,
+        "fcp": 10202,
+        "lcp": 10203,
+        "tbt": 447,
+        "cls": 0,
+        "si": 10202,
+        "scoreSpread": 0
+      },
+      "after": {
+        "appId": "app-01-catalog",
+        "runs": 3,
+        "baseDir": "runs\\baseline",
+        "bundle": {
+          "jsKB": 142,
+          "totalKB": 142
+        },
+        "samples": [
+          {
+            "score": 99,
+            "fcp": 1502,
+            "lcp": 1680,
+            "tbt": 5,
+            "cls": 0,
+            "si": 1502
+          },
+          {
+            "score": 100,
+            "fcp": 1502,
+            "lcp": 1528,
+            "tbt": 2,
+            "cls": 0,
+            "si": 1502
+          },
+          {
+            "score": 100,
+            "fcp": 1502,
+            "lcp": 1529,
+            "tbt": 4,
+            "cls": 0,
+            "si": 1502
+          }
+        ],
+        "score": 100,
+        "fcp": 1502,
+        "lcp": 1529,
+        "tbt": 4,
+        "cls": 0,
+        "si": 1502,
+        "scoreSpread": 1
+      },
+      "error": null,
+      "editSeconds": 620,
+      "turns": 26,
+      "toolCalls": [
+        "Glob",
+        "Read",
+        "Read",
+        "Read",
+        "Read",
+        "Read",
+        "Grep",
+        "Grep",
+        "Glob",
+        "Glob",
+        "Read",
+        "Read",
+        "Read",
+        "Grep",
+        "Read",
+        "Grep",
+        "Read",
+        "Read",
+        "Read",
+        "Read",
+        "Write",
+        "Write",
+        "Edit",
+        "Edit",
+        "Read"
+      ],
+      "costUsd": 2.2814155000000005
+    },
+    "app-02-dashboard": {
+      "appId": "app-02-dashboard",
+      "before": {
+        "appId": "app-02-dashboard",
+        "runs": 3,
+        "bundle": {
+          "jsKB": 710.9,
+          "totalKB": 710.9
+        },
+        "samples": [
+          {
+            "score": 73,
+            "fcp": 4352,
+            "lcp": 4502,
+            "tbt": 103,
+            "cls": 0,
+            "si": 4352
+          },
+          {
+            "score": 73,
+            "fcp": 4352,
+            "lcp": 4502,
+            "tbt": 101,
+            "cls": 0,
+            "si": 4352
+          },
+          {
+            "score": 73,
+            "fcp": 4352,
+            "lcp": 4502,
+            "tbt": 93,
+            "cls": 0,
+            "si": 4352
+          }
+        ],
+        "score": 73,
+        "fcp": 4352,
+        "lcp": 4502,
+        "tbt": 101,
+        "cls": 0,
+        "si": 4352,
+        "scoreSpread": 0
+      },
+      "after": {
+        "appId": "app-02-dashboard",
+        "runs": 3,
+        "baseDir": "runs\\baseline",
+        "bundle": {
+          "jsKB": 141.1,
+          "totalKB": 141.1
+        },
+        "samples": [
+          {
+            "score": 100,
+            "fcp": 1502,
+            "lcp": 1502,
+            "tbt": 0,
+            "cls": 0,
+            "si": 1502
+          },
+          {
+            "score": 100,
+            "fcp": 1501,
+            "lcp": 1501,
+            "tbt": 0,
+            "cls": 0,
+            "si": 1501
+          },
+          {
+            "score": 100,
+            "fcp": 1502,
+            "lcp": 1502,
+            "tbt": 0,
+            "cls": 0,
+            "si": 1502
+          }
+        ],
+        "score": 100,
+        "fcp": 1502,
+        "lcp": 1502,
+        "tbt": 0,
+        "cls": 0,
+        "si": 1502,
+        "scoreSpread": 0
+      },
+      "error": null,
+      "editSeconds": 428,
+      "turns": 29,
+      "toolCalls": [
+        "Glob",
+        "Read",
+        "Read",
+        "Read",
+        "Read",
+        "Read",
+        "Glob",
+        "Read",
+        "Glob",
+        "Read",
+        "Read",
+        "Read",
+        "Grep",
+        "Grep",
+        "Grep",
+        "Grep",
+        "Grep",
+        "Read",
+        "Read",
+        "Read",
+        "Grep",
+        "Grep",
+        "Grep",
+        "Read",
+        "Write",
+        "Write",
+        "Edit",
+        "Edit"
+      ],
+      "costUsd": 1.5882574999999999
+    },
+    "app-03-gallery": {
+      "appId": "app-03-gallery",
+      "before": {
+        "appId": "app-03-gallery",
+        "runs": 3,
+        "bundle": {
+          "jsKB": 1176.9,
+          "totalKB": 1176.9
+        },
+        "samples": [
+          {
+            "score": 53,
+            "fcp": 6601,
+            "lcp": 6803,
+            "tbt": 353,
+            "cls": 0,
+            "si": 6601
+          },
+          {
+            "score": 52,
+            "fcp": 6601,
+            "lcp": 6804,
+            "tbt": 356,
+            "cls": 0,
+            "si": 6601
+          },
+          {
+            "score": 52,
+            "fcp": 6602,
+            "lcp": 6807,
+            "tbt": 361,
+            "cls": 0,
+            "si": 6602
+          }
+        ],
+        "score": 52,
+        "fcp": 6601,
+        "lcp": 6804,
+        "tbt": 356,
+        "cls": 0,
+        "si": 6601,
+        "scoreSpread": 1
+      },
+      "after": {
+        "appId": "app-03-gallery",
+        "runs": 3,
+        "baseDir": "runs\\baseline",
+        "bundle": {
+          "jsKB": 150.3,
+          "totalKB": 919.6
+        },
+        "samples": [
+          {
+            "score": 99,
+            "fcp": 1502,
+            "lcp": 1652,
+            "tbt": 7,
+            "cls": 0,
+            "si": 1502
+          },
+          {
+            "score": 99,
+            "fcp": 1502,
+            "lcp": 1802,
+            "tbt": 8,
+            "cls": 0,
+            "si": 1502
+          },
+          {
+            "score": 99,
+            "fcp": 1502,
+            "lcp": 1802,
+            "tbt": 9,
+            "cls": 0,
+            "si": 1502
+          }
+        ],
+        "score": 99,
+        "fcp": 1502,
+        "lcp": 1802,
+        "tbt": 8,
+        "cls": 0,
+        "si": 1502,
+        "scoreSpread": 0
+      },
+      "error": null,
+      "editSeconds": 390,
+      "turns": 32,
+      "toolCalls": [
+        "Glob",
+        "Read",
+        "Read",
+        "Read",
+        "Read",
+        "Read",
+        "Grep",
+        "Grep",
+        "Write",
+        "Glob",
+        "Glob",
+        "Read",
+        "Grep",
+        "Glob",
+        "Read",
+        "Read",
+        "Read",
+        "Grep",
+        "Grep",
+        "Grep",
+        "Write",
+        "Write",
+        "Write",
+        "Edit",
+        "Edit",
+        "Edit",
+        "Edit",
+        "Read",
+        "Read",
+        "Write",
+        "Write"
+      ],
+      "costUsd": 1.4870389999999998
+    },
+    "app-04-blog": {
+      "appId": "app-04-blog",
+      "before": {
+        "appId": "app-04-blog",
+        "runs": 3,
+        "bundle": {
+          "jsKB": 329,
+          "totalKB": 709.7
+        },
+        "samples": [
+          {
+            "score": 72,
+            "fcp": 4652,
+            "lcp": 4652,
+            "tbt": 0,
+            "cls": 0,
+            "si": 4652
+          },
+          {
+            "score": 72,
+            "fcp": 4652,
+            "lcp": 4652,
+            "tbt": 0,
+            "cls": 0,
+            "si": 4652
+          },
+          {
+            "score": 72,
+            "fcp": 4652,
+            "lcp": 4652,
+            "tbt": 0,
+            "cls": 0,
+            "si": 4652
+          }
+        ],
+        "score": 72,
+        "fcp": 4652,
+        "lcp": 4652,
+        "tbt": 0,
+        "cls": 0,
+        "si": 4652,
+        "scoreSpread": 0
+      },
+      "after": {
+        "appId": "app-04-blog",
+        "runs": 3,
+        "baseDir": "runs\\baseline",
+        "bundle": {
+          "jsKB": 139.5,
+          "totalKB": 139.5
+        },
+        "samples": [
+          {
+            "score": 99,
+            "fcp": 1502,
+            "lcp": 1652,
+            "tbt": 0,
+            "cls": 0,
+            "si": 1502
+          },
+          {
+            "score": 99,
+            "fcp": 1502,
+            "lcp": 1652,
+            "tbt": 0,
+            "cls": 0,
+            "si": 1502
+          },
+          {
+            "score": 99,
+            "fcp": 1502,
+            "lcp": 1652,
+            "tbt": 0,
+            "cls": 0,
+            "si": 1502
+          }
+        ],
+        "score": 99,
+        "fcp": 1502,
+        "lcp": 1652,
+        "tbt": 0,
+        "cls": 0,
+        "si": 1502,
+        "scoreSpread": 0
+      },
+      "error": null,
+      "editSeconds": 219,
+      "turns": 27,
+      "toolCalls": [
+        "Glob",
+        "Glob",
+        "Read",
+        "Read",
+        "Read",
+        "Read",
+        "Read",
+        "Read",
+        "Grep",
+        "Grep",
+        "Grep",
+        "Grep",
+        "Read",
+        "Grep",
+        "Grep",
+        "Grep",
+        "Grep",
+        "Read",
+        "Glob",
+        "Read",
+        "Read",
+        "Write",
+        "Write",
+        "Write",
+        "Glob",
+        "Read"
+      ],
+      "costUsd": 0.9386505
+    },
+    "app-05-admin": {
+      "appId": "app-05-admin",
+      "before": {
+        "appId": "app-05-admin",
+        "runs": 3,
+        "bundle": {
+          "jsKB": 144.3,
+          "totalKB": 144.3
+        },
+        "samples": [
+          {
+            "score": 99,
+            "fcp": 1501,
+            "lcp": 1651,
+            "tbt": 0,
+            "cls": 0,
+            "si": 1501
+          },
+          {
+            "score": 99,
+            "fcp": 1501,
+            "lcp": 1651,
+            "tbt": 0,
+            "cls": 0,
+            "si": 1501
+          },
+          {
+            "score": 99,
+            "fcp": 1501,
+            "lcp": 1651,
+            "tbt": 0,
+            "cls": 0,
+            "si": 1501
+          }
+        ],
+        "score": 99,
+        "fcp": 1501,
+        "lcp": 1651,
+        "tbt": 0,
+        "cls": 0,
+        "si": 1501,
+        "scoreSpread": 0
+      },
+      "after": {
+        "appId": "app-05-admin",
+        "runs": 3,
+        "baseDir": "runs\\baseline",
+        "bundle": {
+          "jsKB": 143.3,
+          "totalKB": 143.3
+        },
+        "samples": [
+          {
+            "score": 99,
+            "fcp": 1501,
+            "lcp": 1651,
+            "tbt": 0,
+            "cls": 0,
+            "si": 1501
+          },
+          {
+            "score": 99,
+            "fcp": 1502,
+            "lcp": 1652,
+            "tbt": 0,
+            "cls": 0,
+            "si": 1502
+          },
+          {
+            "score": 99,
+            "fcp": 1502,
+            "lcp": 1652,
+            "tbt": 0,
+            "cls": 0,
+            "si": 1502
+          }
+        ],
+        "score": 99,
+        "fcp": 1502,
+        "lcp": 1652,
+        "tbt": 0,
+        "cls": 0,
+        "si": 1502,
+        "scoreSpread": 0
+      },
+      "error": null,
+      "editSeconds": 390,
+      "turns": 36,
+      "toolCalls": [
+        "Bash",
+        "Bash",
+        "Glob",
+        "Read",
+        "Read",
+        "Read",
+        "Read",
+        "Grep",
+        "Read",
+        "Glob",
+        "Glob",
+        "Glob",
+        "Read",
+        "Read",
+        "Grep",
+        "Read",
+        "Glob",
+        "Read",
+        "Read",
+        "Grep",
+        "Grep",
+        "Grep",
+        "Write",
+        "Write",
+        "Write",
+        "Grep",
+        "Grep",
+        "Read",
+        "Grep",
+        "Grep",
+        "Grep",
+        "Edit",
+        "Edit",
+        "Read",
+        "Read"
+      ],
+      "costUsd": 1.959741
+    },
+    "app-06-feed": {
+      "appId": "app-06-feed",
+      "before": {
+        "appId": "app-06-feed",
+        "runs": 3,
+        "bundle": {
+          "jsKB": 283.5,
+          "totalKB": 283.5
+        },
+        "samples": [
+          {
+            "score": 85,
+            "fcp": 2252,
+            "lcp": 2474,
+            "tbt": 395,
+            "cls": 0.053,
+            "si": 2252
+          },
+          {
+            "score": 85,
+            "fcp": 2251,
+            "lcp": 2475,
+            "tbt": 397,
+            "cls": 0.053,
+            "si": 2251
+          },
+          {
+            "score": 85,
+            "fcp": 2251,
+            "lcp": 2475,
+            "tbt": 397,
+            "cls": 0.053,
+            "si": 2251
+          }
+        ],
+        "score": 85,
+        "fcp": 2251,
+        "lcp": 2475,
+        "tbt": 397,
+        "cls": 0.053,
+        "si": 2251,
+        "scoreSpread": 0
+      },
+      "after": {
+        "appId": "app-06-feed",
+        "runs": 3,
+        "baseDir": "runs\\baseline",
+        "bundle": {
+          "jsKB": 139.2,
+          "totalKB": 139.2
+        },
+        "samples": [
+          {
+            "score": 89,
+            "fcp": 1501,
+            "lcp": 1724,
+            "tbt": 395,
+            "cls": 0.053,
+            "si": 1501
+          },
+          {
+            "score": 89,
+            "fcp": 1501,
+            "lcp": 1724,
+            "tbt": 396,
+            "cls": 0.053,
+            "si": 1501
+          },
+          {
+            "score": 90,
+            "fcp": 1501,
+            "lcp": 1721,
+            "tbt": 389,
+            "cls": 0.053,
+            "si": 1501
+          }
+        ],
+        "score": 89,
+        "fcp": 1501,
+        "lcp": 1724,
+        "tbt": 395,
+        "cls": 0.053,
+        "si": 1501,
+        "scoreSpread": 1
+      },
+      "error": null,
+      "editSeconds": 417,
+      "turns": 19,
+      "toolCalls": [
+        "Glob",
+        "Read",
+        "Read",
+        "Read",
+        "Read",
+        "Read",
+        "Read",
+        "Grep",
+        "Glob",
+        "Read",
+        "Read",
+        "Write",
+        "Write",
+        "Write",
+        "Edit",
+        "Write",
+        "Grep",
+        "Edit"
+      ],
+      "costUsd": 1.66795
+    },
+    "app-07-report": {
+      "appId": "app-07-report",
+      "before": {
+        "appId": "app-07-report",
+        "runs": 3,
+        "bundle": {
+          "jsKB": 1245.3,
+          "totalKB": 1245.3
+        },
+        "samples": [
+          {
+            "score": 49,
+            "fcp": 7051,
+            "lcp": 7201,
+            "tbt": 434,
+            "cls": 0,
+            "si": 7051
+          },
+          {
+            "score": 49,
+            "fcp": 7051,
+            "lcp": 7201,
+            "tbt": 431,
+            "cls": 0,
+            "si": 7051
+          },
+          {
+            "score": 49,
+            "fcp": 7051,
+            "lcp": 7201,
+            "tbt": 435,
+            "cls": 0,
+            "si": 7051
+          }
+        ],
+        "score": 49,
+        "fcp": 7051,
+        "lcp": 7201,
+        "tbt": 434,
+        "cls": 0,
+        "si": 7051,
+        "scoreSpread": 0
+      },
+      "after": {
+        "appId": "app-07-report",
+        "runs": 3,
+        "baseDir": "runs\\baseline",
+        "bundle": {
+          "jsKB": 141.3,
+          "totalKB": 435.8
+        },
+        "samples": [
+          {
+            "score": 77,
+            "fcp": 1502,
+            "lcp": 2102,
+            "tbt": 975,
+            "cls": 0,
+            "si": 1502
+          },
+          {
+            "score": 76,
+            "fcp": 1502,
+            "lcp": 2103,
+            "tbt": 1078,
+            "cls": 0,
+            "si": 1502
+          },
+          {
+            "score": 81,
+            "fcp": 1502,
+            "lcp": 2102,
+            "tbt": 733,
+            "cls": 0,
+            "si": 1502
+          }
+        ],
+        "score": 77,
+        "fcp": 1502,
+        "lcp": 2102,
+        "tbt": 975,
+        "cls": 0,
+        "si": 1502,
+        "scoreSpread": 5
+      },
+      "error": null,
+      "editSeconds": 515,
+      "turns": 27,
+      "toolCalls": [
+        "Glob",
+        "Read",
+        "Read",
+        "Read",
+        "Read",
+        "Read",
+        "Read",
+        "Glob",
+        "Read",
+        "Glob",
+        "Read",
+        "Read",
+        "Grep",
+        "Grep",
+        "Grep",
+        "Grep",
+        "Grep",
+        "Grep",
+        "Grep",
+        "Grep",
+        "Write",
+        "Write",
+        "Write",
+        "Edit",
+        "Edit",
+        "Grep"
+      ],
+      "costUsd": 1.7292365
+    },
+    "app-08-shop": {
+      "appId": "app-08-shop",
+      "before": {
+        "appId": "app-08-shop",
+        "runs": 3,
+        "bundle": {
+          "jsKB": 658.5,
+          "totalKB": 658.5
+        },
+        "samples": [
+          {
+            "score": 47,
+            "fcp": 4051,
+            "lcp": 4201,
+            "tbt": 2855,
+            "cls": 0,
+            "si": 4051
+          },
+          {
+            "score": 47,
+            "fcp": 4051,
+            "lcp": 4201,
+            "tbt": 2839,
+            "cls": 0,
+            "si": 4051
+          },
+          {
+            "score": 47,
+            "fcp": 4051,
+            "lcp": 4201,
+            "tbt": 2830,
+            "cls": 0,
+            "si": 4051
+          }
+        ],
+        "score": 47,
+        "fcp": 4051,
+        "lcp": 4201,
+        "tbt": 2839,
+        "cls": 0,
+        "si": 4051,
+        "scoreSpread": 0
+      },
+      "after": {
+        "appId": "app-08-shop",
+        "runs": 3,
+        "baseDir": "runs\\baseline",
+        "bundle": {
+          "jsKB": 210.5,
+          "totalKB": 210.5
+        },
+        "samples": [
+          {
+            "score": 98,
+            "fcp": 1802,
+            "lcp": 1952,
+            "tbt": 0,
+            "cls": 0,
+            "si": 1802
+          },
+          {
+            "score": 98,
+            "fcp": 1801,
+            "lcp": 1951,
+            "tbt": 0,
+            "cls": 0,
+            "si": 1801
+          },
+          {
+            "score": 98,
+            "fcp": 1801,
+            "lcp": 1951,
+            "tbt": 0,
+            "cls": 0,
+            "si": 1801
+          }
+        ],
+        "score": 98,
+        "fcp": 1801,
+        "lcp": 1951,
+        "tbt": 0,
+        "cls": 0,
+        "si": 1801,
+        "scoreSpread": 0
+      },
+      "error": null,
+      "editSeconds": 528,
+      "turns": 33,
+      "toolCalls": [
+        "Glob",
+        "Read",
+        "Read",
+        "Read",
+        "Read",
+        "Read",
+        "Glob",
+        "Grep",
+        "Read",
+        "Glob",
+        "Glob",
+        "Read",
+        "Read",
+        "Grep",
+        "Grep",
+        "Read",
+        "Grep",
+        "Grep",
+        "Edit",
+        "Edit",
+        "Edit",
+        "Edit",
+        "Edit",
+        "Read",
+        "Read",
+        "Edit",
+        "Write",
+        "Write",
+        "Edit",
+        "Grep",
+        "Read",
+        "Read"
+      ],
+      "costUsd": 1.8647535000000004
+    },
+    "app-09-docs": {
+      "appId": "app-09-docs",
+      "before": {
+        "appId": "app-09-docs",
+        "runs": 3,
+        "bundle": {
+          "jsKB": 519.1,
+          "totalKB": 519.1
+        },
+        "samples": [
+          {
+            "score": 73,
+            "fcp": 3301,
+            "lcp": 3451,
+            "tbt": 471,
+            "cls": 0,
+            "si": 3301
+          },
+          {
+            "score": 70,
+            "fcp": 3301,
+            "lcp": 3451,
+            "tbt": 568,
+            "cls": 0,
+            "si": 3301
+          },
+          {
+            "score": 71,
+            "fcp": 3301,
+            "lcp": 3451,
+            "tbt": 531,
+            "cls": 0,
+            "si": 3301
+          }
+        ],
+        "score": 71,
+        "fcp": 3301,
+        "lcp": 3451,
+        "tbt": 531,
+        "cls": 0,
+        "si": 3301,
+        "scoreSpread": 3
+      },
+      "after": {
+        "appId": "app-09-docs",
+        "runs": 3,
+        "baseDir": "runs\\baseline",
+        "bundle": {
+          "jsKB": 139.7,
+          "totalKB": 139.7
+        },
+        "samples": [
+          {
+            "score": 99,
+            "fcp": 1501,
+            "lcp": 1651,
+            "tbt": 0,
+            "cls": 0,
+            "si": 1501
+          },
+          {
+            "score": 99,
+            "fcp": 1502,
+            "lcp": 1652,
+            "tbt": 0,
+            "cls": 0,
+            "si": 1502
+          },
+          {
+            "score": 99,
+            "fcp": 1502,
+            "lcp": 1652,
+            "tbt": 0,
+            "cls": 0,
+            "si": 1502
+          }
+        ],
+        "score": 99,
+        "fcp": 1502,
+        "lcp": 1652,
+        "tbt": 0,
+        "cls": 0,
+        "si": 1502,
+        "scoreSpread": 0
+      },
+      "error": null,
+      "editSeconds": 190,
+      "turns": 14,
+      "toolCalls": [
+        "Glob",
+        "Read",
+        "Read",
+        "Read",
+        "Read",
+        "Read",
+        "Grep",
+        "Grep",
+        "Grep",
+        "Grep",
+        "Grep",
+        "Write",
+        "Write"
+      ],
+      "costUsd": 0.747184
+    },
+    "app-10-analytics": {
+      "appId": "app-10-analytics",
+      "before": {
+        "appId": "app-10-analytics",
+        "runs": 3,
+        "bundle": {
+          "jsKB": 700.7,
+          "totalKB": 700.7
+        },
+        "samples": [
+          {
+            "score": 73,
+            "fcp": 4201,
+            "lcp": 4501,
+            "tbt": 126,
+            "cls": 0,
+            "si": 4201
+          },
+          {
+            "score": 73,
+            "fcp": 4202,
+            "lcp": 4502,
+            "tbt": 132,
+            "cls": 0,
+            "si": 4202
+          },
+          {
+            "score": 73,
+            "fcp": 4201,
+            "lcp": 4501,
+            "tbt": 125,
+            "cls": 0,
+            "si": 4201
+          }
+        ],
+        "score": 73,
+        "fcp": 4201,
+        "lcp": 4501,
+        "tbt": 126,
+        "cls": 0,
+        "si": 4201,
+        "scoreSpread": 0
+      },
+      "after": {
+        "appId": "app-10-analytics",
+        "runs": 3,
+        "baseDir": "runs\\baseline",
+        "bundle": {
+          "jsKB": 140.6,
+          "totalKB": 140.6
+        },
+        "samples": [
+          {
+            "score": 99,
+            "fcp": 1502,
+            "lcp": 1652,
+            "tbt": 65,
+            "cls": 0,
+            "si": 1502
+          },
+          {
+            "score": 99,
+            "fcp": 1502,
+            "lcp": 1652,
+            "tbt": 51,
+            "cls": 0,
+            "si": 1502
+          },
+          {
+            "score": 100,
+            "fcp": 1501,
+            "lcp": 1501,
+            "tbt": 46,
+            "cls": 0,
+            "si": 1501
+          }
+        ],
+        "score": 99,
+        "fcp": 1502,
+        "lcp": 1652,
+        "tbt": 51,
+        "cls": 0,
+        "si": 1502,
+        "scoreSpread": 1
+      },
+      "error": null,
+      "editSeconds": 201,
+      "turns": 29,
+      "toolCalls": [
+        "Glob",
+        "Glob",
+        "Glob",
+        "Glob",
+        "Glob",
+        "Glob",
+        "Glob",
+        "Glob",
+        "Read",
+        "Read",
+        "Read",
+        "Read",
+        "Read",
+        "Read",
+        "Grep",
+        "Grep",
+        "Grep",
+        "Read",
+        "Grep",
+        "Grep",
+        "Grep",
+        "Grep",
+        "Write",
+        "Write",
+        "Glob",
+        "Read",
+        "Read",
+        "Grep"
+      ],
+      "costUsd": 0.8656495000000001
+    }
+  },
+  "meanAfter": 95.9,
+  "buildFailures": 0
+}

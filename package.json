@@ -1,0 +1,25 @@
+{
+  "name": "react-perf-agent",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "An agent that diagnoses, fixes, and verifies React performance regressions.",
+  "scripts": {
+    "measure": "node harness/measure.mjs",
+    "baseline": "node baseline/run-baseline.mjs",
+    "agent": "node agent/run-agent.mjs",
+    "score": "node harness/score.mjs"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "vite": "^5.4.11",
+    "lighthouse": "^12.2.1",
+    "chrome-launcher": "^1.1.2",
+    "sirv-cli": "^3.0.0",
+    "puppeteer-core": "^23.0.0"
+  }
+}

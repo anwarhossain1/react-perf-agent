@@ -1,0 +1,1202 @@
+{
+  "label": "agent-norevert",
+  "config": {
+    "MAX_ROUNDS": 3,
+    "VERIFY_ON": true,
+    "REVERT_ON": false
+  },
+  "measuredAt": "2026-08-30T12:57:32.774Z",
+  "apps": {
+    "app-01-catalog": {
+      "appId": "app-01-catalog",
+      "before": {
+        "appId": "app-01-catalog",
+        "runs": 3,
+        "bundle": {
+          "jsKB": 1893.6,
+          "totalKB": 1893.6
+        },
+        "samples": [
+          {
+            "score": 45,
+            "fcp": 10203,
+            "lcp": 10203,
+            "tbt": 439,
+            "cls": 0,
+            "si": 10203
+          },
+          {
+            "score": 45,
+            "fcp": 10202,
+            "lcp": 10202,
+            "tbt": 448,
+            "cls": 0,
+            "si": 10202
+          },
+          {
+            "score": 45,
+            "fcp": 10201,
+            "lcp": 10351,
+            "tbt": 447,
+            "cls": 0,
+            "si": 10201
+          }
+        ],
+        "score": 45,
+        "fcp": 10202,
+        "lcp": 10203,
+        "tbt": 447,
+        "cls": 0,
+        "si": 10202,
+        "scoreSpread": 0
+      },
+      "after": {
+        "appId": "app-01-catalog",
+        "runs": 3,
+        "baseDir": "runs\\agent-norevert",
+        "bundle": {
+          "jsKB": 2.5,
+          "totalKB": 2.5
+        },
+        "samples": [
+          {
+            "score": 90,
+            "fcp": 752,
+            "lcp": 788,
+            "tbt": 414,
+            "cls": 0,
+            "si": 752
+          },
+          {
+            "score": 93,
+            "fcp": 823,
+            "lcp": 823,
+            "tbt": 314,
+            "cls": 0,
+            "si": 823
+          },
+          {
+            "score": 91,
+            "fcp": 752,
+            "lcp": 788,
+            "tbt": 382,
+            "cls": 0,
+            "si": 752
+          }
+        ],
+        "score": 91,
+        "fcp": 752,
+        "lcp": 788,
+        "tbt": 382,
+        "cls": 0,
+        "si": 752,
+        "scoreSpread": 3
+      },
+      "rounds": 3,
+      "kept": 3,
+      "reverted": 0,
+      "seconds": 345,
+      "history": [
+        {
+          "round": 1,
+          "verdict": "kept",
+          "delta": 22,
+          "diffs": [],
+          "summary": "round 1: Hoisted the 198-char `desc` string and the two shared tag strings out of all 6000 `catalog -> kept (+22)"
+        },
+        {
+          "round": 2,
+          "verdict": "kept",
+          "delta": 22,
+          "diffs": [],
+          "summary": "round 2: Replaced the ~484 KB of `catalog.js` object literals with a build-time-verified index gene -> kept (+22)"
+        },
+        {
+          "round": 3,
+          "verdict": "kept",
+          "delta": 3,
+          "diffs": [],
+          "summary": "round 3: Replaced React/ReactDOM with a vanilla DOM builder in `src/main.jsx:1` — a cloned `<li>` t -> kept (+3)"
+        }
+      ],
+      "behaviour": {
+        "ok": true,
+        "diffs": [],
+        "notes": []
+      },
+      "finalError": null
+    },
+    "app-02-dashboard": {
+      "appId": "app-02-dashboard",
+      "before": {
+        "appId": "app-02-dashboard",
+        "runs": 3,
+        "bundle": {
+          "jsKB": 710.9,
+          "totalKB": 710.9
+        },
+        "samples": [
+          {
+            "score": 73,
+            "fcp": 4352,
+            "lcp": 4502,
+            "tbt": 103,
+            "cls": 0,
+            "si": 4352
+          },
+          {
+            "score": 73,
+            "fcp": 4352,
+            "lcp": 4502,
+            "tbt": 101,
+            "cls": 0,
+            "si": 4352
+          },
+          {
+            "score": 73,
+            "fcp": 4352,
+            "lcp": 4502,
+            "tbt": 93,
+            "cls": 0,
+            "si": 4352
+          }
+        ],
+        "score": 73,
+        "fcp": 4352,
+        "lcp": 4502,
+        "tbt": 101,
+        "cls": 0,
+        "si": 4352,
+        "scoreSpread": 0
+      },
+      "after": {
+        "appId": "app-02-dashboard",
+        "runs": 3,
+        "baseDir": "runs\\agent-norevert",
+        "bundle": {
+          "jsKB": 2.3,
+          "totalKB": 2.3
+        },
+        "samples": [
+          {
+            "score": 100,
+            "fcp": 757,
+            "lcp": 901,
+            "tbt": 0,
+            "cls": 0,
+            "si": 757
+          },
+          {
+            "score": 100,
+            "fcp": 757,
+            "lcp": 901,
+            "tbt": 0,
+            "cls": 0,
+            "si": 757
+          },
+          {
+            "score": 100,
+            "fcp": 757,
+            "lcp": 901,
+            "tbt": 0,
+            "cls": 0,
+            "si": 757
+          }
+        ],
+        "score": 100,
+        "fcp": 757,
+        "lcp": 901,
+        "tbt": 0,
+        "cls": 0,
+        "si": 757,
+        "scoreSpread": 0
+      },
+      "rounds": 3,
+      "kept": 3,
+      "reverted": 0,
+      "seconds": 232,
+      "history": [
+        {
+          "round": 1,
+          "verdict": "kept",
+          "delta": 26,
+          "diffs": [],
+          "summary": "round 1: Replaced the 582KB `readings.js` literal with a build-time-verified generator (`sensor = \" -> kept (+26)"
+        },
+        {
+          "round": 2,
+          "verdict": "kept",
+          "delta": 0,
+          "diffs": [],
+          "summary": "round 2: Moved the 12M-iteration startup calibration loop out of module scope into a build-time-pre -> kept (+0)"
+        },
+        {
+          "round": 3,
+          "verdict": "kept",
+          "delta": 1,
+          "diffs": [],
+          "summary": "round 3: Replaced React with a direct DOM builder in `src/main.jsx` (identical markup/styles/order, -> kept (+1)"
+        }
+      ],
+      "behaviour": {
+        "ok": true,
+        "diffs": [],
+        "notes": []
+      },
+      "finalError": null
+    },
+    "app-03-gallery": {
+      "appId": "app-03-gallery",
+      "before": {
+        "appId": "app-03-gallery",
+        "runs": 3,
+        "bundle": {
+          "jsKB": 1176.9,
+          "totalKB": 1176.9
+        },
+        "samples": [
+          {
+            "score": 53,
+            "fcp": 6601,
+            "lcp": 6803,
+            "tbt": 353,
+            "cls": 0,
+            "si": 6601
+          },
+          {
+            "score": 52,
+            "fcp": 6601,
+            "lcp": 6804,
+            "tbt": 356,
+            "cls": 0,
+            "si": 6601
+          },
+          {
+            "score": 52,
+            "fcp": 6602,
+            "lcp": 6807,
+            "tbt": 361,
+            "cls": 0,
+            "si": 6602
+          }
+        ],
+        "score": 52,
+        "fcp": 6601,
+        "lcp": 6804,
+        "tbt": 356,
+        "cls": 0,
+        "si": 6601,
+        "scoreSpread": 1
+      },
+      "after": {
+        "appId": "app-03-gallery",
+        "runs": 3,
+        "baseDir": "runs\\agent-norevert",
+        "bundle": {
+          "jsKB": 0,
+          "totalKB": 0
+        },
+        "samples": [
+          {
+            "score": 100,
+            "fcp": 796,
+            "lcp": 1053,
+            "tbt": 0,
+            "cls": 0,
+            "si": 796
+          },
+          {
+            "score": 100,
+            "fcp": 794,
+            "lcp": 1052,
+            "tbt": 0,
+            "cls": 0,
+            "si": 794
+          },
+          {
+            "score": 100,
+            "fcp": 792,
+            "lcp": 1577,
+            "tbt": 0,
+            "cls": 0,
+            "si": 792
+          }
+        ],
+        "score": 100,
+        "fcp": 794,
+        "lcp": 1053,
+        "tbt": 0,
+        "cls": 0,
+        "si": 794,
+        "scoreSpread": 0
+      },
+      "rounds": 3,
+      "kept": 3,
+      "reverted": 0,
+      "seconds": 373,
+      "history": [
+        {
+          "round": 1,
+          "verdict": "kept",
+          "delta": 47,
+          "diffs": [],
+          "summary": "round 1: Added a build plugin that rewrites the 200 inlined base64 SVGs in `src/photos.js` into emi -> kept (+47)"
+        },
+        {
+          "round": 2,
+          "verdict": "kept",
+          "delta": 1,
+          "diffs": [],
+          "summary": "round 2: Replaced the React runtime with build-time static HTML: the plugin now prerenders the 200  -> kept (+1)"
+        },
+        {
+          "round": 3,
+          "verdict": "kept",
+          "delta": 0,
+          "diffs": [],
+          "summary": "round 3: The prerendered gallery now marks every image past the first four `loading=\"lazy\" decoding -> kept (+0)"
+        }
+      ],
+      "behaviour": {
+        "ok": true,
+        "diffs": [],
+        "notes": []
+      },
+      "finalError": null
+    },
+    "app-04-blog": {
+      "appId": "app-04-blog",
+      "before": {
+        "appId": "app-04-blog",
+        "runs": 3,
+        "bundle": {
+          "jsKB": 329,
+          "totalKB": 709.7
+        },
+        "samples": [
+          {
+            "score": 72,
+            "fcp": 4652,
+            "lcp": 4652,
+            "tbt": 0,
+            "cls": 0,
+            "si": 4652
+          },
+          {
+            "score": 72,
+            "fcp": 4652,
+            "lcp": 4652,
+            "tbt": 0,
+            "cls": 0,
+            "si": 4652
+          },
+          {
+            "score": 72,
+            "fcp": 4652,
+            "lcp": 4652,
+            "tbt": 0,
+            "cls": 0,
+            "si": 4652
+          }
+        ],
+        "score": 72,
+        "fcp": 4652,
+        "lcp": 4652,
+        "tbt": 0,
+        "cls": 0,
+        "si": 4652,
+        "scoreSpread": 0
+      },
+      "after": {
+        "appId": "app-04-blog",
+        "runs": 3,
+        "baseDir": "runs\\agent-norevert",
+        "bundle": {
+          "jsKB": 0,
+          "totalKB": 0.1
+        },
+        "samples": [
+          {
+            "score": 100,
+            "fcp": 751,
+            "lcp": 901,
+            "tbt": 0,
+            "cls": 0,
+            "si": 751
+          },
+          {
+            "score": 100,
+            "fcp": 752,
+            "lcp": 902,
+            "tbt": 0,
+            "cls": 0,
+            "si": 752
+          },
+          {
+            "score": 100,
+            "fcp": 751,
+            "lcp": 901,
+            "tbt": 0,
+            "cls": 0,
+            "si": 751
+          }
+        ],
+        "score": 100,
+        "fcp": 751,
+        "lcp": 901,
+        "tbt": 0,
+        "cls": 0,
+        "si": 751,
+        "scoreSpread": 0
+      },
+      "rounds": 3,
+      "kept": 3,
+      "reverted": 0,
+      "seconds": 297,
+      "history": [
+        {
+          "round": 1,
+          "verdict": "kept",
+          "delta": 9,
+          "diffs": [],
+          "summary": "round 1: Replaced the 300 hard-coded post literals in `src/posts.js` with a build-time-generated eq -> kept (+9)"
+        },
+        {
+          "round": 2,
+          "verdict": "kept",
+          "delta": 18,
+          "diffs": [],
+          "summary": "round 2: Stripped the 4000 dead `.legacy-utility-N` rules from the render-blocking `src/theme.css`  -> kept (+18)"
+        },
+        {
+          "round": 3,
+          "verdict": "kept",
+          "delta": 1,
+          "diffs": [],
+          "summary": "round 3: Replaced the React runtime on this fully-static page with equivalent build-time-guarded va -> kept (+1)"
+        }
+      ],
+      "behaviour": {
+        "ok": true,
+        "diffs": [],
+        "notes": []
+      },
+      "finalError": null
+    },
+    "app-05-admin": {
+      "appId": "app-05-admin",
+      "before": {
+        "appId": "app-05-admin",
+        "runs": 3,
+        "bundle": {
+          "jsKB": 144.3,
+          "totalKB": 144.3
+        },
+        "samples": [
+          {
+            "score": 99,
+            "fcp": 1501,
+            "lcp": 1651,
+            "tbt": 0,
+            "cls": 0,
+            "si": 1501
+          },
+          {
+            "score": 99,
+            "fcp": 1501,
+            "lcp": 1651,
+            "tbt": 0,
+            "cls": 0,
+            "si": 1501
+          },
+          {
+            "score": 99,
+            "fcp": 1501,
+            "lcp": 1651,
+            "tbt": 0,
+            "cls": 0,
+            "si": 1501
+          }
+        ],
+        "score": 99,
+        "fcp": 1501,
+        "lcp": 1651,
+        "tbt": 0,
+        "cls": 0,
+        "si": 1501,
+        "scoreSpread": 0
+      },
+      "after": {
+        "appId": "app-05-admin",
+        "runs": 3,
+        "baseDir": "runs\\agent-norevert",
+        "bundle": {
+          "jsKB": 0,
+          "totalKB": 0
+        },
+        "samples": [
+          {
+            "score": 100,
+            "fcp": 658,
+            "lcp": 752,
+            "tbt": 0,
+            "cls": 0,
+            "si": 658
+          },
+          {
+            "score": 100,
+            "fcp": 658,
+            "lcp": 751,
+            "tbt": 0,
+            "cls": 0,
+            "si": 658
+          },
+          {
+            "score": 100,
+            "fcp": 657,
+            "lcp": 751,
+            "tbt": 0,
+            "cls": 0,
+            "si": 657
+          }
+        ],
+        "score": 100,
+        "fcp": 658,
+        "lcp": 751,
+        "tbt": 0,
+        "cls": 0,
+        "si": 658,
+        "scoreSpread": 0
+      },
+      "rounds": 3,
+      "kept": 3,
+      "reverted": 0,
+      "seconds": 415,
+      "history": [
+        {
+          "round": 1,
+          "verdict": "kept",
+          "delta": 1,
+          "diffs": [],
+          "summary": "round 1: Replaced React/ReactDOM with a ~50-line vanilla DOM renderer in `src/main.js` (same markup -> kept (+1)"
+        },
+        {
+          "round": 2,
+          "verdict": "kept",
+          "delta": 0,
+          "diffs": [],
+          "summary": "round 2: Inlined the entry chunk into `index.html` (and dropped the now-dead modulepreload polyfill -> kept (+0)"
+        },
+        {
+          "round": 3,
+          "verdict": "kept",
+          "delta": 0,
+          "diffs": [],
+          "summary": "round 3: Precomputed the five input-independent `utils.helperN` results at build time (verified aga -> kept (+0)"
+        }
+      ],
+      "behaviour": {
+        "ok": true,
+        "diffs": [],
+        "notes": []
+      },
+      "finalError": null
+    },
+    "app-06-feed": {
+      "appId": "app-06-feed",
+      "before": {
+        "appId": "app-06-feed",
+        "runs": 3,
+        "bundle": {
+          "jsKB": 283.5,
+          "totalKB": 283.5
+        },
+        "samples": [
+          {
+            "score": 85,
+            "fcp": 2252,
+            "lcp": 2474,
+            "tbt": 395,
+            "cls": 0.053,
+            "si": 2252
+          },
+          {
+            "score": 85,
+            "fcp": 2251,
+            "lcp": 2475,
+            "tbt": 397,
+            "cls": 0.053,
+            "si": 2251
+          },
+          {
+            "score": 85,
+            "fcp": 2251,
+            "lcp": 2475,
+            "tbt": 397,
+            "cls": 0.053,
+            "si": 2251
+          }
+        ],
+        "score": 85,
+        "fcp": 2251,
+        "lcp": 2475,
+        "tbt": 397,
+        "cls": 0.053,
+        "si": 2251,
+        "scoreSpread": 0
+      },
+      "after": {
+        "appId": "app-06-feed",
+        "runs": 3,
+        "baseDir": "runs\\agent-norevert",
+        "bundle": {
+          "jsKB": 2.2,
+          "totalKB": 2.2
+        },
+        "samples": [
+          {
+            "score": 100,
+            "fcp": 751,
+            "lcp": 766,
+            "tbt": 0,
+            "cls": 0.053,
+            "si": 751
+          },
+          {
+            "score": 100,
+            "fcp": 751,
+            "lcp": 766,
+            "tbt": 0,
+            "cls": 0.053,
+            "si": 751
+          },
+          {
+            "score": 100,
+            "fcp": 780,
+            "lcp": 780,
+            "tbt": 0,
+            "cls": 0.053,
+            "si": 780
+          }
+        ],
+        "score": 100,
+        "fcp": 751,
+        "lcp": 766,
+        "tbt": 0,
+        "cls": 0.053,
+        "si": 751,
+        "scoreSpread": 0
+      },
+      "rounds": 3,
+      "kept": 3,
+      "reverted": 0,
+      "seconds": 206,
+      "history": [
+        {
+          "round": 1,
+          "verdict": "kept",
+          "delta": 10,
+          "diffs": [],
+          "summary": "round 1: Gave every feed `<img>` its intrinsic `width={640} height={360}` (with `height: auto`, so  -> kept (+10)"
+        },
+        {
+          "round": 2,
+          "verdict": "kept",
+          "delta": 4,
+          "diffs": [],
+          "summary": "round 2: Replaced `src/feed.js`'s 300 hardcoded records (~140 KB of repeated text + base64 SVG, hal -> kept (+4)"
+        },
+        {
+          "round": 3,
+          "verdict": "kept",
+          "delta": 1,
+          "diffs": [],
+          "summary": "round 3: Replaced the React runtime in `src/main.jsx` with a vanilla template-clone DOM builder (id -> kept (+1)"
+        }
+      ],
+      "behaviour": {
+        "ok": true,
+        "diffs": [],
+        "notes": []
+      },
+      "finalError": null
+    },
+    "app-07-report": {
+      "appId": "app-07-report",
+      "before": {
+        "appId": "app-07-report",
+        "runs": 3,
+        "bundle": {
+          "jsKB": 1245.3,
+          "totalKB": 1245.3
+        },
+        "samples": [
+          {
+            "score": 49,
+            "fcp": 7051,
+            "lcp": 7201,
+            "tbt": 434,
+            "cls": 0,
+            "si": 7051
+          },
+          {
+            "score": 49,
+            "fcp": 7051,
+            "lcp": 7201,
+            "tbt": 431,
+            "cls": 0,
+            "si": 7051
+          },
+          {
+            "score": 49,
+            "fcp": 7051,
+            "lcp": 7201,
+            "tbt": 435,
+            "cls": 0,
+            "si": 7051
+          }
+        ],
+        "score": 49,
+        "fcp": 7051,
+        "lcp": 7201,
+        "tbt": 434,
+        "cls": 0,
+        "si": 7051,
+        "scoreSpread": 0
+      },
+      "after": {
+        "appId": "app-07-report",
+        "runs": 3,
+        "baseDir": "runs\\agent-norevert",
+        "bundle": {
+          "jsKB": 1.7,
+          "totalKB": 1.7
+        },
+        "samples": [
+          {
+            "score": 80,
+            "fcp": 752,
+            "lcp": 1192,
+            "tbt": 864,
+            "cls": 0,
+            "si": 1365
+          },
+          {
+            "score": 80,
+            "fcp": 751,
+            "lcp": 1192,
+            "tbt": 858,
+            "cls": 0,
+            "si": 1356
+          },
+          {
+            "score": 80,
+            "fcp": 751,
+            "lcp": 1193,
+            "tbt": 853,
+            "cls": 0,
+            "si": 1353
+          }
+        ],
+        "score": 80,
+        "fcp": 751,
+        "lcp": 1192,
+        "tbt": 858,
+        "cls": 0,
+        "si": 1356,
+        "scoreSpread": 0
+      },
+      "rounds": 3,
+      "kept": 2,
+      "reverted": 0,
+      "seconds": 609,
+      "history": [
+        {
+          "round": 1,
+          "verdict": "reverted-build",
+          "error": "Connection closed.",
+          "summary": "round 1: build failed, reverted"
+        },
+        {
+          "round": 2,
+          "verdict": "kept",
+          "delta": 50,
+          "diffs": [],
+          "summary": "round 2: Replaced React in `src/main.jsx:1` with a vanilla string builder that emits the identical  -> kept (+50)"
+        },
+        {
+          "round": 3,
+          "verdict": "kept-unguarded",
+          "delta": -19,
+          "diffs": [],
+          "summary": "round 3: Hoisted the 50-byte per-cell `style` attribute (repeated on all 36,000 cells, ~64% of the  -> kept (-19)"
+        }
+      ],
+      "behaviour": {
+        "ok": true,
+        "diffs": [],
+        "notes": []
+      },
+      "finalError": null
+    },
+    "app-08-shop": {
+      "appId": "app-08-shop",
+      "before": {
+        "appId": "app-08-shop",
+        "runs": 3,
+        "bundle": {
+          "jsKB": 658.5,
+          "totalKB": 658.5
+        },
+        "samples": [
+          {
+            "score": 47,
+            "fcp": 4051,
+            "lcp": 4201,
+            "tbt": 2855,
+            "cls": 0,
+            "si": 4051
+          },
+          {
+            "score": 47,
+            "fcp": 4051,
+            "lcp": 4201,
+            "tbt": 2839,
+            "cls": 0,
+            "si": 4051
+          },
+          {
+            "score": 47,
+            "fcp": 4051,
+            "lcp": 4201,
+            "tbt": 2830,
+            "cls": 0,
+            "si": 4051
+          }
+        ],
+        "score": 47,
+        "fcp": 4051,
+        "lcp": 4201,
+        "tbt": 2839,
+        "cls": 0,
+        "si": 4051,
+        "scoreSpread": 0
+      },
+      "after": {
+        "appId": "app-08-shop",
+        "runs": 3,
+        "baseDir": "runs\\agent-norevert",
+        "bundle": {
+          "jsKB": 0,
+          "totalKB": 0
+        },
+        "samples": [
+          {
+            "score": 100,
+            "fcp": 643,
+            "lcp": 656,
+            "tbt": 25,
+            "cls": 0,
+            "si": 643
+          },
+          {
+            "score": 100,
+            "fcp": 643,
+            "lcp": 643,
+            "tbt": 19,
+            "cls": 0,
+            "si": 643
+          },
+          {
+            "score": 100,
+            "fcp": 665,
+            "lcp": 685,
+            "tbt": 34,
+            "cls": 0,
+            "si": 665
+          }
+        ],
+        "score": 100,
+        "fcp": 643,
+        "lcp": 656,
+        "tbt": 25,
+        "cls": 0,
+        "si": 643,
+        "scoreSpread": 0
+      },
+      "rounds": 3,
+      "kept": 3,
+      "reverted": 0,
+      "seconds": 291,
+      "history": [
+        {
+          "round": 1,
+          "verdict": "kept",
+          "delta": 23,
+          "diffs": [],
+          "summary": "round 1: Replaced the 3000-entry product fixture (~514 KB of literals) with an equivalent build-tim -> kept (+23)"
+        },
+        {
+          "round": 2,
+          "verdict": "kept",
+          "delta": 28,
+          "diffs": [],
+          "summary": "round 2: Cached the `Intl.NumberFormat` per currency, hoisted a single `Intl.Collator`, and precomp -> kept (+28)"
+        },
+        {
+          "round": 3,
+          "verdict": "kept",
+          "delta": 2,
+          "diffs": [],
+          "summary": "round 3: Dropped React entirely (140.1 KB of runtime for a page with no state or events): the shell -> kept (+2)"
+        }
+      ],
+      "behaviour": {
+        "ok": true,
+        "diffs": [],
+        "notes": []
+      },
+      "finalError": null
+    },
+    "app-09-docs": {
+      "appId": "app-09-docs",
+      "before": {
+        "appId": "app-09-docs",
+        "runs": 3,
+        "bundle": {
+          "jsKB": 519.1,
+          "totalKB": 519.1
+        },
+        "samples": [
+          {
+            "score": 73,
+            "fcp": 3301,
+            "lcp": 3451,
+            "tbt": 471,
+            "cls": 0,
+            "si": 3301
+          },
+          {
+            "score": 70,
+            "fcp": 3301,
+            "lcp": 3451,
+            "tbt": 568,
+            "cls": 0,
+            "si": 3301
+          },
+          {
+            "score": 71,
+            "fcp": 3301,
+            "lcp": 3451,
+            "tbt": 531,
+            "cls": 0,
+            "si": 3301
+          }
+        ],
+        "score": 71,
+        "fcp": 3301,
+        "lcp": 3451,
+        "tbt": 531,
+        "cls": 0,
+        "si": 3301,
+        "scoreSpread": 3
+      },
+      "after": {
+        "appId": "app-09-docs",
+        "runs": 3,
+        "baseDir": "runs\\agent-norevert",
+        "bundle": {
+          "jsKB": 0,
+          "totalKB": 0
+        },
+        "samples": [
+          {
+            "score": 100,
+            "fcp": 742,
+            "lcp": 751,
+            "tbt": 0,
+            "cls": 0,
+            "si": 742
+          },
+          {
+            "score": 100,
+            "fcp": 745,
+            "lcp": 751,
+            "tbt": 0,
+            "cls": 0,
+            "si": 745
+          },
+          {
+            "score": 100,
+            "fcp": 742,
+            "lcp": 751,
+            "tbt": 0,
+            "cls": 0,
+            "si": 742
+          }
+        ],
+        "score": 100,
+        "fcp": 742,
+        "lcp": 751,
+        "tbt": 0,
+        "cls": 0,
+        "si": 742,
+        "scoreSpread": 0
+      },
+      "rounds": 3,
+      "kept": 3,
+      "reverted": 0,
+      "seconds": 238,
+      "history": [
+        {
+          "round": 1,
+          "verdict": "kept",
+          "delta": 16,
+          "diffs": [],
+          "summary": "round 1: Replaced the 220 byte-identical records in `src/sections.js` with an equivalent build-time -> kept (+16)"
+        },
+        {
+          "round": 2,
+          "verdict": "kept",
+          "delta": 12,
+          "diffs": [],
+          "summary": "round 2: Removed the per-word `<span>` wrappers in `Para` (a dead \"search highlighter\" hook), cutti -> kept (+12)"
+        },
+        {
+          "round": 3,
+          "verdict": "kept",
+          "delta": 1,
+          "diffs": [],
+          "summary": "round 3: Replaced React with a template-clone vanilla renderer for this fully static page and inlin -> kept (+1)"
+        }
+      ],
+      "behaviour": {
+        "ok": true,
+        "diffs": [],
+        "notes": []
+      },
+      "finalError": null
+    },
+    "app-10-analytics": {
+      "appId": "app-10-analytics",
+      "before": {
+        "appId": "app-10-analytics",
+        "runs": 3,
+        "bundle": {
+          "jsKB": 700.7,
+          "totalKB": 700.7
+        },
+        "samples": [
+          {
+            "score": 73,
+            "fcp": 4201,
+            "lcp": 4501,
+            "tbt": 126,
+            "cls": 0,
+            "si": 4201
+          },
+          {
+            "score": 73,
+            "fcp": 4202,
+            "lcp": 4502,
+            "tbt": 132,
+            "cls": 0,
+            "si": 4202
+          },
+          {
+            "score": 73,
+            "fcp": 4201,
+            "lcp": 4501,
+            "tbt": 125,
+            "cls": 0,
+            "si": 4201
+          }
+        ],
+        "score": 73,
+        "fcp": 4201,
+        "lcp": 4501,
+        "tbt": 126,
+        "cls": 0,
+        "si": 4201,
+        "scoreSpread": 0
+      },
+      "after": {
+        "appId": "app-10-analytics",
+        "runs": 3,
+        "baseDir": "runs\\agent-norevert",
+        "bundle": {
+          "jsKB": 1.7,
+          "totalKB": 1.7
+        },
+        "samples": [
+          {
+            "score": 99,
+            "fcp": 751,
+            "lcp": 907,
+            "tbt": 112,
+            "cls": 0,
+            "si": 751
+          },
+          {
+            "score": 100,
+            "fcp": 848,
+            "lcp": 902,
+            "tbt": 0,
+            "cls": 0,
+            "si": 848
+          },
+          {
+            "score": 100,
+            "fcp": 846,
+            "lcp": 901,
+            "tbt": 0,
+            "cls": 0,
+            "si": 846
+          }
+        ],
+        "score": 100,
+        "fcp": 846,
+        "lcp": 902,
+        "tbt": 0,
+        "cls": 0,
+        "si": 846,
+        "scoreSpread": 1
+      },
+      "rounds": 3,
+      "kept": 3,
+      "reverted": 0,
+      "seconds": 367,
+      "history": [
+        {
+          "round": 1,
+          "verdict": "kept",
+          "delta": 0,
+          "diffs": [],
+          "summary": "round 1: Replaced the 5000-record `events.js` literal with a build-time-verified index generator (a -> kept (+0)"
+        },
+        {
+          "round": 2,
+          "verdict": "kept",
+          "delta": 7,
+          "diffs": [],
+          "summary": "round 2: Replaced React/react-dom with a direct DOM build in `src/main.jsx` (single-pass stats buck -> kept (+7)"
+        },
+        {
+          "round": 3,
+          "verdict": "kept",
+          "delta": 20,
+          "diffs": [],
+          "summary": "round 3: Fixed the `derive-events` plugin's user-id modulus in `vite.config.js:28,38` (`i % 200` →  -> kept (+20)"
+        }
+      ],
+      "behaviour": {
+        "ok": true,
+        "diffs": [],
+        "notes": []
+      },
+      "finalError": null
+    }
+  },
+  "meanAfter": 97.1,
+  "behaviourBroken": 0
+}
