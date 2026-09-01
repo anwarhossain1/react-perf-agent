@@ -42,10 +42,10 @@ Don't wait for it live — cut to the finished result.
 **This is the heart of the video.** Show the agent running on `app-08-shop`:
 
 ```bash
-AGENT_LABEL=demo node agent/run-agent.mjs app-08-shop
+AGENT_LABEL=demo node agent/run-agent.mjs app-08-shop   # already run; log in results/demo-run.log
 ```
 
-Narrate the loop as the three rounds land (47 → 74 → 93 → 97):
+Narrate the loop as the three rounds land (**47 → 74 → 97 → 100**, 3 rounds kept, 0 reverted, behaviour OK):
 
 > "The harness measures, then hands the numbers to the model — the model never
 > gets a build tool, so it can't grade its own work. One targeted change per

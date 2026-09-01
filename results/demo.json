@@ -1,0 +1,132 @@
+{
+  "label": "demo",
+  "config": {
+    "MAX_ROUNDS": 3,
+    "VERIFY_ON": true,
+    "REVERT_ON": true
+  },
+  "measuredAt": "2026-09-01T06:59:06.094Z",
+  "apps": {
+    "app-08-shop": {
+      "appId": "app-08-shop",
+      "before": {
+        "appId": "app-08-shop",
+        "runs": 3,
+        "bundle": {
+          "jsKB": 658.5,
+          "totalKB": 658.5
+        },
+        "samples": [
+          {
+            "score": 47,
+            "fcp": 4051,
+            "lcp": 4201,
+            "tbt": 2855,
+            "cls": 0,
+            "si": 4051
+          },
+          {
+            "score": 47,
+            "fcp": 4051,
+            "lcp": 4201,
+            "tbt": 2839,
+            "cls": 0,
+            "si": 4051
+          },
+          {
+            "score": 47,
+            "fcp": 4051,
+            "lcp": 4201,
+            "tbt": 2830,
+            "cls": 0,
+            "si": 4051
+          }
+        ],
+        "score": 47,
+        "fcp": 4051,
+        "lcp": 4201,
+        "tbt": 2839,
+        "cls": 0,
+        "si": 4051,
+        "scoreSpread": 0
+      },
+      "after": {
+        "appId": "app-08-shop",
+        "runs": 3,
+        "baseDir": "runs\\demo",
+        "bundle": {
+          "jsKB": 1.6,
+          "totalKB": 2.3
+        },
+        "samples": [
+          {
+            "score": 100,
+            "fcp": 928,
+            "lcp": 928,
+            "tbt": 0,
+            "cls": 0,
+            "si": 928
+          },
+          {
+            "score": 100,
+            "fcp": 951,
+            "lcp": 951,
+            "tbt": 0,
+            "cls": 0,
+            "si": 951
+          },
+          {
+            "score": 98,
+            "fcp": 751,
+            "lcp": 932,
+            "tbt": 161,
+            "cls": 0,
+            "si": 751
+          }
+        ],
+        "score": 100,
+        "fcp": 928,
+        "lcp": 932,
+        "tbt": 0,
+        "cls": 0,
+        "si": 928,
+        "scoreSpread": 2
+      },
+      "rounds": 3,
+      "kept": 3,
+      "reverted": 0,
+      "seconds": 188,
+      "history": [
+        {
+          "round": 1,
+          "verdict": "kept",
+          "delta": 27,
+          "diffs": [],
+          "summary": "round 1: Cached `Intl.NumberFormat` per currency and precomputed the sort keys so each of the 3000  -> kept (+27)"
+        },
+        {
+          "round": 2,
+          "verdict": "kept",
+          "delta": 23,
+          "diffs": [],
+          "summary": "round 2: Replaced the 3000-record `products.js` literal with a build-time-verified index generator  -> kept (+23)"
+        },
+        {
+          "round": 3,
+          "verdict": "kept",
+          "delta": 3,
+          "diffs": [],
+          "summary": "round 3: Replaced React/ReactDOM with a vanilla template-clone + DocumentFragment builder (same sor -> kept (+3)"
+        }
+      ],
+      "behaviour": {
+        "ok": true,
+        "diffs": [],
+        "notes": []
+      },
+      "finalError": null
+    }
+  },
+  "meanAfter": 100,
+  "behaviourBroken": 0
+}

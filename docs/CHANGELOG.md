@@ -379,3 +379,38 @@ Both were found by reading what the agent *did*, not what it *scored*. So: every
 capability claim in an agent's design gets a test that tries to violate it, and
 every result that looks too good gets read rather than recorded. A green suite means
 the checks you wrote passed. It does not mean the system is correct.
+
+---
+
+## Post-hoc — the bundle metric went blind exactly when it mattered
+
+Found while preparing the demo recording: several agent runs reported **0 KB JS**.
+A React app cannot ship 0 KB, so the number was wrong rather than remarkable.
+
+`bundleBytes()` only counted `dist/assets/*.js`. When a build inlines its
+JavaScript into `index.html` — which is what the agent did on `app-08-shop`,
+collapsing the whole app into a single 2.3 KB file — the counter saw no `.js`
+files and reported zero. **The secondary metric stopped measuring precisely when
+the app changed shape most.**
+
+Verified the rewrite itself was sound before fixing the metric: rendered content
+is byte-identical to the original — 3000 distinct items, ids 0–2999, same first
+and last prices, 400,223 characters of text in both, zero console errors. A 2.3 KB
+file reproducing the page exactly.
+
+`bundleBytes()` now walks the entire `dist` tree and counts inline `<script>`
+bodies as JS. The same app now reports 1.6 KB rather than 0 KB.
+
+**Caveat on the recorded results.** The `JS KB` column in
+[results/comparison.md](../results/comparison.md) was produced with the old
+counter, so it under-reports on builds that inline their JavaScript — the
+suspiciously tiny figures (1.7 KB, 2 KB, 6 KB) are real but incomplete, and 0 KB
+means "inlined, not measured". **The primary metric, the Lighthouse score, is
+computed by Lighthouse against the served build and is unaffected.** Re-running
+the arms would correct the column; it was not worth several hours of model calls
+to restate a secondary metric, and stating the limitation is more honest than
+quietly regenerating one number.
+
+This is the third instance of the same pattern, and the reason it is worth its own
+entry: **the measurement broke silently and looked like a result.** Zero is a
+plausible-looking number. Nothing failed, nothing warned.

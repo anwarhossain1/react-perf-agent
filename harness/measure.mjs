@@ -30,15 +30,32 @@ export function buildApp (appId, baseDir = 'apps') {
   })
 }
 
+/**
+ * Bytes the browser has to download, walking the WHOLE dist tree.
+ *
+ * An earlier version only counted `dist/assets/*.js`, which reported 0 KB when an
+ * optimised build inlined its JavaScript into index.html - the metric went blind
+ * exactly when the app changed shape most. Inline <script> bodies are counted as
+ * JS, wherever they live.
+ */
 export function bundleBytes (appId, baseDir = 'apps') {
-  const dir = path.join(ROOT, baseDir, appId, 'dist', 'assets')
-  if (!fs.existsSync(dir)) return { jsKB: 0, totalKB: 0 }
+  const dist = path.join(ROOT, baseDir, appId, 'dist')
+  if (!fs.existsSync(dist)) return { jsKB: 0, totalKB: 0 }
   let js = 0, total = 0
-  for (const f of fs.readdirSync(dir)) {
-    const size = fs.statSync(path.join(dir, f)).size
-    total += size
-    if (f.endsWith('.js')) js += size
+  const walk = (d) => {
+    for (const e of fs.readdirSync(d, { withFileTypes: true })) {
+      const full = path.join(d, e.name)
+      if (e.isDirectory()) { walk(full); continue }
+      const size = fs.statSync(full).size
+      total += size
+      if (e.name.endsWith('.js')) js += size
+      else if (e.name.endsWith('.html')) {
+        const html = fs.readFileSync(full, 'utf8')
+        for (const m of html.matchAll(/<script\b[^>]*>([\s\S]*?)<\/script>/gi)) js += Buffer.byteLength(m[1])
+      }
+    }
   }
+  walk(dist)
   return { jsKB: +(js / 1024).toFixed(1), totalKB: +(total / 1024).toFixed(1) }
 }
 
@@ -99,7 +116,9 @@ export async function measure (appId, runs = 3, baseDir = 'apps') {
   return result
 }
 
-if (import.meta.url === `file://${process.argv[1]}` || process.argv[1].endsWith('measure.mjs')) {
+// Guarded: process.argv[1] is undefined under `node -e`, and an unguarded
+// .endsWith() there throws before the module can even be imported.
+if (process.argv[1]?.endsWith('measure.mjs')) {
   const [appId, runs] = process.argv.slice(2)
   if (!appId) { console.error('usage: node harness/measure.mjs <appId> [runs]'); process.exit(1) }
   const r = await measure(appId, Number(runs) || 3)
