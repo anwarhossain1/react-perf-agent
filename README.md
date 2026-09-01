@@ -186,5 +186,5 @@ would ever have revealed it. Full version at the end of
 |---|---|
 | Solution code + changelog | this repo, [docs/CHANGELOG.md](docs/CHANGELOG.md) |
 | Reproduction guide | [docs/REPRODUCE.md](docs/REPRODUCE.md) |
-| Video outline | [docs/VIDEO.md](docs/VIDEO.md) |
+| Video outline + narration script | [docs/VIDEO.md](docs/VIDEO.md), [docs/SCRIPT.md](docs/SCRIPT.md) |
 | Agent trajectories | `results/trajectories-md/` (90 rendered), raw in `results/trajectories/` |
