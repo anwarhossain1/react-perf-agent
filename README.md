@@ -70,20 +70,27 @@ started — a guarantee a single-pass agent structurally cannot offer.
 Behaviour is captured in a real headless browser, before and after, and compared
 on the things a windowing or memoization fix must preserve:
 
-| Invariant | Why this one |
+| Hard gate | Why this one |
 |---|---|
-| Text above the fold | catches deleted or altered content |
+| Text above the fold | catches deleted or altered content; on apps showing a record count ("6000 of 6000 parts") this is also the data-loss gate |
 | Text at the bottom **after scrolling** | catches windowing that loses the tail |
-| Total scroll height (±5%) | catches silently shortened datasets |
 | Filter interaction result | catches broken memoization and stale closures |
+| Clicking a control | catches interactivity lost to pre-rendering |
 | Console error-free | catches crashes the score cannot see |
 
-Deliberately **not** a DOM node count — windowing a long list correctly removes
-thousands of nodes, and a naive diff would flag the best fix in the catalog as a
-regression.
+Deliberately **not** a DOM node count, page height, or content position. Every one
+of those is *also* changed by the correct fix — windowing removes thousands of
+nodes, sizing images changes page height, pre-rendering removes React entirely.
+Three verifier designs were discarded to exactly this before the gate was narrowed
+to invariants that cannot drift. Page height and a positional content profile are
+still recorded, but as **notes for human review, not pass/fail**.
 
-Secondary metrics: JS bundle KB (deterministic), build success, wall-clock per
-app, and **false positives on a negative control**.
+That narrowing is a real loss of coverage, and it is stated rather than hidden: see
+CHANGELOG Step 1b for the three designs and why each failed.
+
+Secondary metrics: JS bundle KB, build success, wall-clock per app, and **false
+positives on a negative control**. Note the recorded JS KB column under-reports on
+builds that inline their JavaScript - see the post-hoc entry in the changelog.
 
 ## The eval set
 
